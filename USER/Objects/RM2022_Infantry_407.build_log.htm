@@ -27,260 +27,6 @@ Project File Date:  04/16/2022
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\SoftWare\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Infantry'
-compiling system_stm32f4xx.c...
-compiling stm32f4xx_it.c...
-compiling beep.c...
-..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\task_init.h(58): warning:  #1295-D: Deprecated declaration Task_Init - give arg types
-  void Task_Init();
-..\TASK\task_init.h(59): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\led_task.h(5): warning:  #1295-D: Deprecated declaration led_task_create - give arg types
-  void led_task_create();
-..\TASK\led_task.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\imu_task.h(5): warning:  #1295-D: Deprecated declaration imu_task_create - give arg types
-  void imu_task_create();
-..\TASK\imu_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\shoot_task.h(23): warning:  #1295-D: Deprecated declaration shoot_task_create - give arg types
-  void shoot_task_create();
-..\TASK\shoot_task.h(25): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\gimbal_task.h(13): warning:  #1295-D: Deprecated declaration gimbal_task_create - give arg types
-  void gimbal_task_create();
-..\TASK\gimbal_task.h(16): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\chassis_task.h(31): warning:  #1295-D: Deprecated declaration chassis_task_create - give arg types
-  void chassis_task_create();
-..\TASK\chassis_task.h(34): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\ui_task.h(5): warning:  #1295-D: Deprecated declaration ui_task_create - give arg types
-  void ui_task_create();
-..\TASK\ui_task.h(6): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\can_send_task.h(5): warning:  #1295-D: Deprecated declaration can_send_task_create - give arg types
-  void can_send_task_create();
-..\TASK\can_send_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\mode_task.h(5): warning:  #1295-D: Deprecated declaration mode_task_create - give arg types
-  void mode_task_create();
-..\TASK\mode_task.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\supercap_task.h(5): warning:  #1295-D: Deprecated declaration supercap_task_create - give arg types
-  void supercap_task_create();
-..\TASK\supercap_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\nuc_task.h(5): warning:  #1295-D: Deprecated declaration nuc_task_create - give arg types
-  void nuc_task_create();
-..\TASK\nuc_task.h(9): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\led.h(21): warning:  #1295-D: Deprecated declaration LED_Init - give arg types
-  void LED_Init();//初始化LED灯			    
-..\HARDWARE\laser.h(13): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\dr16.h(72): warning:  #1295-D: Deprecated declaration DR16_Init - give arg types
-  void DR16_Init();
-..\HARDWARE\dr16.h(74): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\tim6.h(10): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\pid.h(45): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\can.h(18): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\spi.h(5): warning:  #1295-D: Deprecated declaration SPI_IMU_Init - give arg types
-  void SPI_IMU_Init();
-..\HARDWARE\spi.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\imu.h(13): warning:  #1295-D: Deprecated declaration IMU_Ahrs_Update - give arg types
-  void IMU_Ahrs_Update();
-..\HARDWARE\imu.h(14): warning:  #1295-D: Deprecated declaration IMU_Attitude_Update - give arg types
-  void IMU_Attitude_Update();
-..\HARDWARE\nuc.h(7): warning:  #1295-D: Deprecated declaration NUC_Init - give arg types
-  void NUC_Init();
-..\HARDWARE\nuc.h(18): warning:  #1295-D: Deprecated declaration NUC_Send_Data - give arg types
-  void NUC_Send_Data();
-..\HARDWARE\nuc.h(21): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\shoot.h(5): warning:  #1295-D: Deprecated declaration Shoot_Init - give arg types
-  void Shoot_Init();
-..\HARDWARE\shoot.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\cover.h(5): warning:  #1295-D: Deprecated declaration Cover_Init - give arg types
-  void Cover_Init();
-..\HARDWARE\cover.h(19): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\referee.h(6): warning:  #1295-D: Deprecated declaration Referee_Init - give arg types
-  void Referee_Init();
-..\HARDWARE\referee.h(9): warning:  #1295-D: Deprecated declaration referee_data_send - give arg types
-  void referee_data_send();
-..\HARDWARE\referee.h(11): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\beep.h(21): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\bmi088.h(9): warning:  #1295-D: Deprecated declaration BMI088_SPI_Init - give arg types
-  void BMI088_SPI_Init();
-..\HARDWARE\bmi088.h(11): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\bmi088driver.h(103): warning:  #1295-D: Deprecated declaration BMI088_Get_Data - give arg types
-  void BMI088_Get_Data();
-..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
-  void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\custom_ui.h(138): warning:  #1295-D: Deprecated declaration Show_UI - give arg types
-  void Show_UI();
-..\HARDWARE\custom_ui.h(139): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\gimbal.h(16): warning:  #1295-D: Deprecated declaration Gimbal_Init - give arg types
-  void Gimbal_Init();
-..\HARDWARE\gimbal.h(18): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\chassis.h(8): warning:  #1295-D: Deprecated declaration Chassis_Init - give arg types
-  void Chassis_Init();
-..\HARDWARE\chassis.h(10): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\can_handle.h(55): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\beep.h(18): warning:  #1295-D: Deprecated declaration Beep_Init - give arg types
-  void Beep_Init();
-..\HARDWARE\beep.h(21): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\beep.c: 62 warnings, 0 errors
-compiling bmi088.c...
-..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\task_init.h(58): warning:  #1295-D: Deprecated declaration Task_Init - give arg types
-  void Task_Init();
-..\TASK\task_init.h(59): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\led_task.h(5): warning:  #1295-D: Deprecated declaration led_task_create - give arg types
-  void led_task_create();
-..\TASK\led_task.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\imu_task.h(5): warning:  #1295-D: Deprecated declaration imu_task_create - give arg types
-  void imu_task_create();
-..\TASK\imu_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\shoot_task.h(23): warning:  #1295-D: Deprecated declaration shoot_task_create - give arg types
-  void shoot_task_create();
-..\TASK\shoot_task.h(25): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\gimbal_task.h(13): warning:  #1295-D: Deprecated declaration gimbal_task_create - give arg types
-  void gimbal_task_create();
-..\TASK\gimbal_task.h(16): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\chassis_task.h(31): warning:  #1295-D: Deprecated declaration chassis_task_create - give arg types
-  void chassis_task_create();
-..\TASK\chassis_task.h(34): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\ui_task.h(5): warning:  #1295-D: Deprecated declaration ui_task_create - give arg types
-  void ui_task_create();
-..\TASK\ui_task.h(6): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\can_send_task.h(5): warning:  #1295-D: Deprecated declaration can_send_task_create - give arg types
-  void can_send_task_create();
-..\TASK\can_send_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\mode_task.h(5): warning:  #1295-D: Deprecated declaration mode_task_create - give arg types
-  void mode_task_create();
-..\TASK\mode_task.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\supercap_task.h(5): warning:  #1295-D: Deprecated declaration supercap_task_create - give arg types
-  void supercap_task_create();
-..\TASK\supercap_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\nuc_task.h(5): warning:  #1295-D: Deprecated declaration nuc_task_create - give arg types
-  void nuc_task_create();
-..\TASK\nuc_task.h(9): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\led.h(21): warning:  #1295-D: Deprecated declaration LED_Init - give arg types
-  void LED_Init();//初始化LED灯			    
-..\HARDWARE\laser.h(13): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\dr16.h(72): warning:  #1295-D: Deprecated declaration DR16_Init - give arg types
-  void DR16_Init();
-..\HARDWARE\dr16.h(74): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\tim6.h(10): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\pid.h(45): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\can.h(18): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\spi.h(5): warning:  #1295-D: Deprecated declaration SPI_IMU_Init - give arg types
-  void SPI_IMU_Init();
-..\HARDWARE\spi.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\imu.h(13): warning:  #1295-D: Deprecated declaration IMU_Ahrs_Update - give arg types
-  void IMU_Ahrs_Update();
-..\HARDWARE\imu.h(14): warning:  #1295-D: Deprecated declaration IMU_Attitude_Update - give arg types
-  void IMU_Attitude_Update();
-..\HARDWARE\nuc.h(7): warning:  #1295-D: Deprecated declaration NUC_Init - give arg types
-  void NUC_Init();
-..\HARDWARE\nuc.h(18): warning:  #1295-D: Deprecated declaration NUC_Send_Data - give arg types
-  void NUC_Send_Data();
-..\HARDWARE\nuc.h(21): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\shoot.h(5): warning:  #1295-D: Deprecated declaration Shoot_Init - give arg types
-  void Shoot_Init();
-..\HARDWARE\shoot.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\cover.h(5): warning:  #1295-D: Deprecated declaration Cover_Init - give arg types
-  void Cover_Init();
-..\HARDWARE\cover.h(19): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\referee.h(6): warning:  #1295-D: Deprecated declaration Referee_Init - give arg types
-  void Referee_Init();
-..\HARDWARE\referee.h(9): warning:  #1295-D: Deprecated declaration referee_data_send - give arg types
-  void referee_data_send();
-..\HARDWARE\referee.h(11): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\beep.h(18): warning:  #1295-D: Deprecated declaration Beep_Init - give arg types
-  void Beep_Init();
-..\HARDWARE\beep.h(21): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\bmi088.h(11): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\bmi088driver.h(103): warning:  #1295-D: Deprecated declaration BMI088_Get_Data - give arg types
-  void BMI088_Get_Data();
-..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
-  void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\custom_ui.h(138): warning:  #1295-D: Deprecated declaration Show_UI - give arg types
-  void Show_UI();
-..\HARDWARE\custom_ui.h(139): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\gimbal.h(16): warning:  #1295-D: Deprecated declaration Gimbal_Init - give arg types
-  void Gimbal_Init();
-..\HARDWARE\gimbal.h(18): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\chassis.h(8): warning:  #1295-D: Deprecated declaration Chassis_Init - give arg types
-  void Chassis_Init();
-..\HARDWARE\chassis.h(10): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\can_handle.h(55): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\bmi088.h(9): warning:  #1295-D: Deprecated declaration BMI088_SPI_Init - give arg types
-  void BMI088_SPI_Init();
-..\HARDWARE\bmi088.h(11): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\bmi088.c: 62 warnings, 0 errors
 compiling main.c...
 ..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -382,9 +128,9 @@ compiling main.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -405,6 +151,132 @@ compiling main.c...
 main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
 main.c: 61 warnings, 0 errors
+compiling beep.c...
+..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\task_init.h(58): warning:  #1295-D: Deprecated declaration Task_Init - give arg types
+  void Task_Init();
+..\TASK\task_init.h(59): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\led_task.h(5): warning:  #1295-D: Deprecated declaration led_task_create - give arg types
+  void led_task_create();
+..\TASK\led_task.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\imu_task.h(5): warning:  #1295-D: Deprecated declaration imu_task_create - give arg types
+  void imu_task_create();
+..\TASK\imu_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\shoot_task.h(23): warning:  #1295-D: Deprecated declaration shoot_task_create - give arg types
+  void shoot_task_create();
+..\TASK\shoot_task.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\gimbal_task.h(13): warning:  #1295-D: Deprecated declaration gimbal_task_create - give arg types
+  void gimbal_task_create();
+..\TASK\gimbal_task.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\chassis_task.h(31): warning:  #1295-D: Deprecated declaration chassis_task_create - give arg types
+  void chassis_task_create();
+..\TASK\chassis_task.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\ui_task.h(5): warning:  #1295-D: Deprecated declaration ui_task_create - give arg types
+  void ui_task_create();
+..\TASK\ui_task.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\can_send_task.h(5): warning:  #1295-D: Deprecated declaration can_send_task_create - give arg types
+  void can_send_task_create();
+..\TASK\can_send_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\mode_task.h(5): warning:  #1295-D: Deprecated declaration mode_task_create - give arg types
+  void mode_task_create();
+..\TASK\mode_task.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\supercap_task.h(5): warning:  #1295-D: Deprecated declaration supercap_task_create - give arg types
+  void supercap_task_create();
+..\TASK\supercap_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\nuc_task.h(5): warning:  #1295-D: Deprecated declaration nuc_task_create - give arg types
+  void nuc_task_create();
+..\TASK\nuc_task.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\led.h(21): warning:  #1295-D: Deprecated declaration LED_Init - give arg types
+  void LED_Init();//初始化LED灯			    
+..\HARDWARE\laser.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\dr16.h(72): warning:  #1295-D: Deprecated declaration DR16_Init - give arg types
+  void DR16_Init();
+..\HARDWARE\dr16.h(74): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\tim6.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\pid.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\can.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\spi.h(5): warning:  #1295-D: Deprecated declaration SPI_IMU_Init - give arg types
+  void SPI_IMU_Init();
+..\HARDWARE\spi.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\imu.h(13): warning:  #1295-D: Deprecated declaration IMU_Ahrs_Update - give arg types
+  void IMU_Ahrs_Update();
+..\HARDWARE\imu.h(14): warning:  #1295-D: Deprecated declaration IMU_Attitude_Update - give arg types
+  void IMU_Attitude_Update();
+..\HARDWARE\nuc.h(7): warning:  #1295-D: Deprecated declaration NUC_Init - give arg types
+  void NUC_Init();
+..\HARDWARE\nuc.h(18): warning:  #1295-D: Deprecated declaration NUC_Send_Data - give arg types
+  void NUC_Send_Data();
+..\HARDWARE\nuc.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\shoot.h(5): warning:  #1295-D: Deprecated declaration Shoot_Init - give arg types
+  void Shoot_Init();
+..\HARDWARE\shoot.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\cover.h(5): warning:  #1295-D: Deprecated declaration Cover_Init - give arg types
+  void Cover_Init();
+..\HARDWARE\cover.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\referee.h(6): warning:  #1295-D: Deprecated declaration Referee_Init - give arg types
+  void Referee_Init();
+..\HARDWARE\referee.h(9): warning:  #1295-D: Deprecated declaration referee_data_send - give arg types
+  void referee_data_send();
+..\HARDWARE\referee.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\beep.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\bmi088.h(9): warning:  #1295-D: Deprecated declaration BMI088_SPI_Init - give arg types
+  void BMI088_SPI_Init();
+..\HARDWARE\bmi088.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\bmi088driver.h(103): warning:  #1295-D: Deprecated declaration BMI088_Get_Data - give arg types
+  void BMI088_Get_Data();
+..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+  void Rudder_Init();
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\custom_ui.h(138): warning:  #1295-D: Deprecated declaration Show_UI - give arg types
+  void Show_UI();
+..\HARDWARE\custom_ui.h(139): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\gimbal.h(16): warning:  #1295-D: Deprecated declaration Gimbal_Init - give arg types
+  void Gimbal_Init();
+..\HARDWARE\gimbal.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\chassis.h(8): warning:  #1295-D: Deprecated declaration Chassis_Init - give arg types
+  void Chassis_Init();
+..\HARDWARE\chassis.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\can_handle.h(55): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\beep.h(18): warning:  #1295-D: Deprecated declaration Beep_Init - give arg types
+  void Beep_Init();
+..\HARDWARE\beep.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\beep.c: 62 warnings, 0 errors
 compiling can.c...
 ..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -506,9 +378,9 @@ compiling can.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -531,6 +403,132 @@ compiling can.c...
 ..\HARDWARE\can.h(18): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\can.c: 62 warnings, 0 errors
+compiling bmi088.c...
+..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\task_init.h(58): warning:  #1295-D: Deprecated declaration Task_Init - give arg types
+  void Task_Init();
+..\TASK\task_init.h(59): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\led_task.h(5): warning:  #1295-D: Deprecated declaration led_task_create - give arg types
+  void led_task_create();
+..\TASK\led_task.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\imu_task.h(5): warning:  #1295-D: Deprecated declaration imu_task_create - give arg types
+  void imu_task_create();
+..\TASK\imu_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\shoot_task.h(23): warning:  #1295-D: Deprecated declaration shoot_task_create - give arg types
+  void shoot_task_create();
+..\TASK\shoot_task.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\gimbal_task.h(13): warning:  #1295-D: Deprecated declaration gimbal_task_create - give arg types
+  void gimbal_task_create();
+..\TASK\gimbal_task.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\chassis_task.h(31): warning:  #1295-D: Deprecated declaration chassis_task_create - give arg types
+  void chassis_task_create();
+..\TASK\chassis_task.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\ui_task.h(5): warning:  #1295-D: Deprecated declaration ui_task_create - give arg types
+  void ui_task_create();
+..\TASK\ui_task.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\can_send_task.h(5): warning:  #1295-D: Deprecated declaration can_send_task_create - give arg types
+  void can_send_task_create();
+..\TASK\can_send_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\mode_task.h(5): warning:  #1295-D: Deprecated declaration mode_task_create - give arg types
+  void mode_task_create();
+..\TASK\mode_task.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\supercap_task.h(5): warning:  #1295-D: Deprecated declaration supercap_task_create - give arg types
+  void supercap_task_create();
+..\TASK\supercap_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\nuc_task.h(5): warning:  #1295-D: Deprecated declaration nuc_task_create - give arg types
+  void nuc_task_create();
+..\TASK\nuc_task.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\led.h(21): warning:  #1295-D: Deprecated declaration LED_Init - give arg types
+  void LED_Init();//初始化LED灯			    
+..\HARDWARE\laser.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\dr16.h(72): warning:  #1295-D: Deprecated declaration DR16_Init - give arg types
+  void DR16_Init();
+..\HARDWARE\dr16.h(74): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\tim6.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\pid.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\can.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\spi.h(5): warning:  #1295-D: Deprecated declaration SPI_IMU_Init - give arg types
+  void SPI_IMU_Init();
+..\HARDWARE\spi.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\imu.h(13): warning:  #1295-D: Deprecated declaration IMU_Ahrs_Update - give arg types
+  void IMU_Ahrs_Update();
+..\HARDWARE\imu.h(14): warning:  #1295-D: Deprecated declaration IMU_Attitude_Update - give arg types
+  void IMU_Attitude_Update();
+..\HARDWARE\nuc.h(7): warning:  #1295-D: Deprecated declaration NUC_Init - give arg types
+  void NUC_Init();
+..\HARDWARE\nuc.h(18): warning:  #1295-D: Deprecated declaration NUC_Send_Data - give arg types
+  void NUC_Send_Data();
+..\HARDWARE\nuc.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\shoot.h(5): warning:  #1295-D: Deprecated declaration Shoot_Init - give arg types
+  void Shoot_Init();
+..\HARDWARE\shoot.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\cover.h(5): warning:  #1295-D: Deprecated declaration Cover_Init - give arg types
+  void Cover_Init();
+..\HARDWARE\cover.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\referee.h(6): warning:  #1295-D: Deprecated declaration Referee_Init - give arg types
+  void Referee_Init();
+..\HARDWARE\referee.h(9): warning:  #1295-D: Deprecated declaration referee_data_send - give arg types
+  void referee_data_send();
+..\HARDWARE\referee.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\beep.h(18): warning:  #1295-D: Deprecated declaration Beep_Init - give arg types
+  void Beep_Init();
+..\HARDWARE\beep.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\bmi088.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\bmi088driver.h(103): warning:  #1295-D: Deprecated declaration BMI088_Get_Data - give arg types
+  void BMI088_Get_Data();
+..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+  void Rudder_Init();
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\custom_ui.h(138): warning:  #1295-D: Deprecated declaration Show_UI - give arg types
+  void Show_UI();
+..\HARDWARE\custom_ui.h(139): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\gimbal.h(16): warning:  #1295-D: Deprecated declaration Gimbal_Init - give arg types
+  void Gimbal_Init();
+..\HARDWARE\gimbal.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\chassis.h(8): warning:  #1295-D: Deprecated declaration Chassis_Init - give arg types
+  void Chassis_Init();
+..\HARDWARE\chassis.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\can_handle.h(55): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\bmi088.h(9): warning:  #1295-D: Deprecated declaration BMI088_SPI_Init - give arg types
+  void BMI088_SPI_Init();
+..\HARDWARE\bmi088.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\bmi088.c: 62 warnings, 0 errors
 compiling bmi088driver.c...
 ..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -630,9 +628,9 @@ compiling bmi088driver.c...
   #endif
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -760,9 +758,9 @@ compiling can_handle.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -890,9 +888,9 @@ compiling chassis.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -1016,9 +1014,9 @@ compiling cover.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -1146,9 +1144,9 @@ compiling crc.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -1272,9 +1270,9 @@ compiling custom_ui.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -1400,9 +1398,9 @@ compiling dr16.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -1528,9 +1526,9 @@ compiling gimbal.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -1650,9 +1648,9 @@ compiling imu.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -1794,9 +1792,9 @@ compiling laser.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -1918,9 +1916,9 @@ compiling led.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -1943,6 +1941,138 @@ compiling led.c...
 ..\HARDWARE\led.h(21): warning:  #1295-D: Deprecated declaration LED_Init - give arg types
   void LED_Init();//初始化LED灯			    
 ..\HARDWARE\led.c: 61 warnings, 0 errors
+compiling nuc.c...
+..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\task_init.h(58): warning:  #1295-D: Deprecated declaration Task_Init - give arg types
+  void Task_Init();
+..\TASK\task_init.h(59): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\led_task.h(5): warning:  #1295-D: Deprecated declaration led_task_create - give arg types
+  void led_task_create();
+..\TASK\led_task.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\imu_task.h(5): warning:  #1295-D: Deprecated declaration imu_task_create - give arg types
+  void imu_task_create();
+..\TASK\imu_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\shoot_task.h(23): warning:  #1295-D: Deprecated declaration shoot_task_create - give arg types
+  void shoot_task_create();
+..\TASK\shoot_task.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\gimbal_task.h(13): warning:  #1295-D: Deprecated declaration gimbal_task_create - give arg types
+  void gimbal_task_create();
+..\TASK\gimbal_task.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\chassis_task.h(31): warning:  #1295-D: Deprecated declaration chassis_task_create - give arg types
+  void chassis_task_create();
+..\TASK\chassis_task.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\ui_task.h(5): warning:  #1295-D: Deprecated declaration ui_task_create - give arg types
+  void ui_task_create();
+..\TASK\ui_task.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\can_send_task.h(5): warning:  #1295-D: Deprecated declaration can_send_task_create - give arg types
+  void can_send_task_create();
+..\TASK\can_send_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\mode_task.h(5): warning:  #1295-D: Deprecated declaration mode_task_create - give arg types
+  void mode_task_create();
+..\TASK\mode_task.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\supercap_task.h(5): warning:  #1295-D: Deprecated declaration supercap_task_create - give arg types
+  void supercap_task_create();
+..\TASK\supercap_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\nuc_task.h(5): warning:  #1295-D: Deprecated declaration nuc_task_create - give arg types
+  void nuc_task_create();
+..\TASK\nuc_task.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\led.h(21): warning:  #1295-D: Deprecated declaration LED_Init - give arg types
+  void LED_Init();//初始化LED灯			    
+..\HARDWARE\laser.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\dr16.h(72): warning:  #1295-D: Deprecated declaration DR16_Init - give arg types
+  void DR16_Init();
+..\HARDWARE\dr16.h(74): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\tim6.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\pid.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\can.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\spi.h(5): warning:  #1295-D: Deprecated declaration SPI_IMU_Init - give arg types
+  void SPI_IMU_Init();
+..\HARDWARE\spi.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\imu.h(13): warning:  #1295-D: Deprecated declaration IMU_Ahrs_Update - give arg types
+  void IMU_Ahrs_Update();
+..\HARDWARE\imu.h(14): warning:  #1295-D: Deprecated declaration IMU_Attitude_Update - give arg types
+  void IMU_Attitude_Update();
+..\HARDWARE\nuc.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\shoot.h(5): warning:  #1295-D: Deprecated declaration Shoot_Init - give arg types
+  void Shoot_Init();
+..\HARDWARE\shoot.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\cover.h(5): warning:  #1295-D: Deprecated declaration Cover_Init - give arg types
+  void Cover_Init();
+..\HARDWARE\cover.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\referee.h(6): warning:  #1295-D: Deprecated declaration Referee_Init - give arg types
+  void Referee_Init();
+..\HARDWARE\referee.h(9): warning:  #1295-D: Deprecated declaration referee_data_send - give arg types
+  void referee_data_send();
+..\HARDWARE\referee.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\beep.h(18): warning:  #1295-D: Deprecated declaration Beep_Init - give arg types
+  void Beep_Init();
+..\HARDWARE\beep.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\bmi088.h(9): warning:  #1295-D: Deprecated declaration BMI088_SPI_Init - give arg types
+  void BMI088_SPI_Init();
+..\HARDWARE\bmi088.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\bmi088driver.h(103): warning:  #1295-D: Deprecated declaration BMI088_Get_Data - give arg types
+  void BMI088_Get_Data();
+..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+  void Rudder_Init();
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\custom_ui.h(138): warning:  #1295-D: Deprecated declaration Show_UI - give arg types
+  void Show_UI();
+..\HARDWARE\custom_ui.h(139): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\gimbal.h(16): warning:  #1295-D: Deprecated declaration Gimbal_Init - give arg types
+  void Gimbal_Init();
+..\HARDWARE\gimbal.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\chassis.h(8): warning:  #1295-D: Deprecated declaration Chassis_Init - give arg types
+  void Chassis_Init();
+..\HARDWARE\chassis.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\can_handle.h(55): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\nuc.h(7): warning:  #1295-D: Deprecated declaration NUC_Init - give arg types
+  void NUC_Init();
+..\HARDWARE\nuc.h(18): warning:  #1295-D: Deprecated declaration NUC_Send_Data - give arg types
+  void NUC_Send_Data();
+..\HARDWARE\nuc.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\nuc.c(49): warning:  #177-D: variable "DMA_InitStruct"  was declared but never referenced
+  	DMA_InitTypeDef    DMA_InitStruct;
+..\HARDWARE\nuc.c(50): warning:  #177-D: variable "NVIC_InitStruct"  was declared but never referenced
+  	NVIC_InitTypeDef   NVIC_InitStruct;
+..\HARDWARE\nuc.c(309): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\nuc.c: 65 warnings, 0 errors
 compiling pid.c...
 ..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -2044,9 +2174,9 @@ compiling pid.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -2069,138 +2199,6 @@ compiling pid.c...
 ..\HARDWARE\pid.h(45): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\pid.c: 62 warnings, 0 errors
-compiling nuc.c...
-..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\task_init.h(58): warning:  #1295-D: Deprecated declaration Task_Init - give arg types
-  void Task_Init();
-..\TASK\task_init.h(59): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\led_task.h(5): warning:  #1295-D: Deprecated declaration led_task_create - give arg types
-  void led_task_create();
-..\TASK\led_task.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\imu_task.h(5): warning:  #1295-D: Deprecated declaration imu_task_create - give arg types
-  void imu_task_create();
-..\TASK\imu_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\shoot_task.h(23): warning:  #1295-D: Deprecated declaration shoot_task_create - give arg types
-  void shoot_task_create();
-..\TASK\shoot_task.h(25): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\gimbal_task.h(13): warning:  #1295-D: Deprecated declaration gimbal_task_create - give arg types
-  void gimbal_task_create();
-..\TASK\gimbal_task.h(16): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\chassis_task.h(31): warning:  #1295-D: Deprecated declaration chassis_task_create - give arg types
-  void chassis_task_create();
-..\TASK\chassis_task.h(34): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\ui_task.h(5): warning:  #1295-D: Deprecated declaration ui_task_create - give arg types
-  void ui_task_create();
-..\TASK\ui_task.h(6): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\can_send_task.h(5): warning:  #1295-D: Deprecated declaration can_send_task_create - give arg types
-  void can_send_task_create();
-..\TASK\can_send_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\mode_task.h(5): warning:  #1295-D: Deprecated declaration mode_task_create - give arg types
-  void mode_task_create();
-..\TASK\mode_task.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\supercap_task.h(5): warning:  #1295-D: Deprecated declaration supercap_task_create - give arg types
-  void supercap_task_create();
-..\TASK\supercap_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\nuc_task.h(5): warning:  #1295-D: Deprecated declaration nuc_task_create - give arg types
-  void nuc_task_create();
-..\TASK\nuc_task.h(9): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\led.h(21): warning:  #1295-D: Deprecated declaration LED_Init - give arg types
-  void LED_Init();//初始化LED灯			    
-..\HARDWARE\laser.h(13): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\dr16.h(72): warning:  #1295-D: Deprecated declaration DR16_Init - give arg types
-  void DR16_Init();
-..\HARDWARE\dr16.h(74): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\tim6.h(10): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\pid.h(45): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\can.h(18): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\spi.h(5): warning:  #1295-D: Deprecated declaration SPI_IMU_Init - give arg types
-  void SPI_IMU_Init();
-..\HARDWARE\spi.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\imu.h(13): warning:  #1295-D: Deprecated declaration IMU_Ahrs_Update - give arg types
-  void IMU_Ahrs_Update();
-..\HARDWARE\imu.h(14): warning:  #1295-D: Deprecated declaration IMU_Attitude_Update - give arg types
-  void IMU_Attitude_Update();
-..\HARDWARE\nuc.h(21): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\shoot.h(5): warning:  #1295-D: Deprecated declaration Shoot_Init - give arg types
-  void Shoot_Init();
-..\HARDWARE\shoot.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\cover.h(5): warning:  #1295-D: Deprecated declaration Cover_Init - give arg types
-  void Cover_Init();
-..\HARDWARE\cover.h(19): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\referee.h(6): warning:  #1295-D: Deprecated declaration Referee_Init - give arg types
-  void Referee_Init();
-..\HARDWARE\referee.h(9): warning:  #1295-D: Deprecated declaration referee_data_send - give arg types
-  void referee_data_send();
-..\HARDWARE\referee.h(11): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\beep.h(18): warning:  #1295-D: Deprecated declaration Beep_Init - give arg types
-  void Beep_Init();
-..\HARDWARE\beep.h(21): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\bmi088.h(9): warning:  #1295-D: Deprecated declaration BMI088_SPI_Init - give arg types
-  void BMI088_SPI_Init();
-..\HARDWARE\bmi088.h(11): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\bmi088driver.h(103): warning:  #1295-D: Deprecated declaration BMI088_Get_Data - give arg types
-  void BMI088_Get_Data();
-..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
-  void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\custom_ui.h(138): warning:  #1295-D: Deprecated declaration Show_UI - give arg types
-  void Show_UI();
-..\HARDWARE\custom_ui.h(139): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\gimbal.h(16): warning:  #1295-D: Deprecated declaration Gimbal_Init - give arg types
-  void Gimbal_Init();
-..\HARDWARE\gimbal.h(18): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\chassis.h(8): warning:  #1295-D: Deprecated declaration Chassis_Init - give arg types
-  void Chassis_Init();
-..\HARDWARE\chassis.h(10): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\can_handle.h(55): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\nuc.h(7): warning:  #1295-D: Deprecated declaration NUC_Init - give arg types
-  void NUC_Init();
-..\HARDWARE\nuc.h(18): warning:  #1295-D: Deprecated declaration NUC_Send_Data - give arg types
-  void NUC_Send_Data();
-..\HARDWARE\nuc.h(21): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\nuc.c(49): warning:  #177-D: variable "DMA_InitStruct"  was declared but never referenced
-  	DMA_InitTypeDef    DMA_InitStruct;
-..\HARDWARE\nuc.c(50): warning:  #177-D: variable "NVIC_InitStruct"  was declared but never referenced
-  	NVIC_InitTypeDef   NVIC_InitStruct;
-..\HARDWARE\nuc.c(309): warning:  #1-D: last line of file ends without a newline
-  }
-..\HARDWARE\nuc.c: 65 warnings, 0 errors
 compiling referee.c...
 ..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -2298,9 +2296,9 @@ compiling referee.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -2430,9 +2428,9 @@ compiling referee_info.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -2554,9 +2552,9 @@ compiling shoot.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -2682,9 +2680,9 @@ compiling spi.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -2812,9 +2810,9 @@ compiling tim6.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -2944,9 +2942,9 @@ compiling flash.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -2967,7 +2965,6 @@ compiling flash.c...
 ..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\flash.c: 61 warnings, 0 errors
-compiling sys.c...
 compiling rudder.c...
 ..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -3069,7 +3066,7 @@ compiling rudder.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -3089,9 +3086,9 @@ compiling rudder.c...
   #endif
 ..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\rudder.c(24): warning:  #1-D: last line of file ends without a newline
   }
@@ -3197,9 +3194,9 @@ compiling delay.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -3220,7 +3217,6 @@ compiling delay.c...
 ..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\SYSTEM\delay\delay.c: 61 warnings, 0 errors
-compiling misc.c...
 compiling usart.c...
 ..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -3322,9 +3318,9 @@ compiling usart.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -3345,152 +3341,6 @@ compiling usart.c...
 ..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\SYSTEM\usart\usart.c: 61 warnings, 0 errors
-compiling stm32f4xx_can.c...
-compiling stm32f4xx_dma.c...
-compiling stm32f4xx_gpio.c...
-compiling stm32f4xx_exti.c...
-compiling stm32f4xx_rcc.c...
-compiling stm32f4xx_spi.c...
-compiling stm32f4xx_syscfg.c...
-compiling croutine.c...
-compiling stm32f4xx_tim.c...
-compiling stm32f4xx_usart.c...
-compiling event_groups.c...
-compiling list.c...
-compiling queue.c...
-compiling stm32f4xx_flash.c...
-compiling tasks.c...
-compiling timers.c...
-compiling heap_4.c...
-compiling port.c...
-compiling can_send_task.c...
-..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\task_init.h(58): warning:  #1295-D: Deprecated declaration Task_Init - give arg types
-  void Task_Init();
-..\TASK\task_init.h(59): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\led_task.h(5): warning:  #1295-D: Deprecated declaration led_task_create - give arg types
-  void led_task_create();
-..\TASK\led_task.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\imu_task.h(5): warning:  #1295-D: Deprecated declaration imu_task_create - give arg types
-  void imu_task_create();
-..\TASK\imu_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\shoot_task.h(23): warning:  #1295-D: Deprecated declaration shoot_task_create - give arg types
-  void shoot_task_create();
-..\TASK\shoot_task.h(25): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\gimbal_task.h(13): warning:  #1295-D: Deprecated declaration gimbal_task_create - give arg types
-  void gimbal_task_create();
-..\TASK\gimbal_task.h(16): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\chassis_task.h(31): warning:  #1295-D: Deprecated declaration chassis_task_create - give arg types
-  void chassis_task_create();
-..\TASK\chassis_task.h(34): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\ui_task.h(5): warning:  #1295-D: Deprecated declaration ui_task_create - give arg types
-  void ui_task_create();
-..\TASK\ui_task.h(6): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\can_send_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\mode_task.h(5): warning:  #1295-D: Deprecated declaration mode_task_create - give arg types
-  void mode_task_create();
-..\TASK\mode_task.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\supercap_task.h(5): warning:  #1295-D: Deprecated declaration supercap_task_create - give arg types
-  void supercap_task_create();
-..\TASK\supercap_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\nuc_task.h(5): warning:  #1295-D: Deprecated declaration nuc_task_create - give arg types
-  void nuc_task_create();
-..\TASK\nuc_task.h(9): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\led.h(21): warning:  #1295-D: Deprecated declaration LED_Init - give arg types
-  void LED_Init();//初始化LED灯			    
-..\HARDWARE\laser.h(13): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\dr16.h(72): warning:  #1295-D: Deprecated declaration DR16_Init - give arg types
-  void DR16_Init();
-..\HARDWARE\dr16.h(74): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\tim6.h(10): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\pid.h(45): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\can.h(18): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\spi.h(5): warning:  #1295-D: Deprecated declaration SPI_IMU_Init - give arg types
-  void SPI_IMU_Init();
-..\HARDWARE\spi.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\imu.h(13): warning:  #1295-D: Deprecated declaration IMU_Ahrs_Update - give arg types
-  void IMU_Ahrs_Update();
-..\HARDWARE\imu.h(14): warning:  #1295-D: Deprecated declaration IMU_Attitude_Update - give arg types
-  void IMU_Attitude_Update();
-..\HARDWARE\nuc.h(7): warning:  #1295-D: Deprecated declaration NUC_Init - give arg types
-  void NUC_Init();
-..\HARDWARE\nuc.h(18): warning:  #1295-D: Deprecated declaration NUC_Send_Data - give arg types
-  void NUC_Send_Data();
-..\HARDWARE\nuc.h(21): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\shoot.h(5): warning:  #1295-D: Deprecated declaration Shoot_Init - give arg types
-  void Shoot_Init();
-..\HARDWARE\shoot.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\cover.h(5): warning:  #1295-D: Deprecated declaration Cover_Init - give arg types
-  void Cover_Init();
-..\HARDWARE\cover.h(19): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\referee.h(6): warning:  #1295-D: Deprecated declaration Referee_Init - give arg types
-  void Referee_Init();
-..\HARDWARE\referee.h(9): warning:  #1295-D: Deprecated declaration referee_data_send - give arg types
-  void referee_data_send();
-..\HARDWARE\referee.h(11): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\beep.h(18): warning:  #1295-D: Deprecated declaration Beep_Init - give arg types
-  void Beep_Init();
-..\HARDWARE\beep.h(21): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\bmi088.h(9): warning:  #1295-D: Deprecated declaration BMI088_SPI_Init - give arg types
-  void BMI088_SPI_Init();
-..\HARDWARE\bmi088.h(11): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\bmi088driver.h(103): warning:  #1295-D: Deprecated declaration BMI088_Get_Data - give arg types
-  void BMI088_Get_Data();
-..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
-  void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\custom_ui.h(138): warning:  #1295-D: Deprecated declaration Show_UI - give arg types
-  void Show_UI();
-..\HARDWARE\custom_ui.h(139): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\gimbal.h(16): warning:  #1295-D: Deprecated declaration Gimbal_Init - give arg types
-  void Gimbal_Init();
-..\HARDWARE\gimbal.h(18): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\chassis.h(8): warning:  #1295-D: Deprecated declaration Chassis_Init - give arg types
-  void Chassis_Init();
-..\HARDWARE\chassis.h(10): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\can_handle.h(55): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\can_send_task.h(5): warning:  #1295-D: Deprecated declaration can_send_task_create - give arg types
-  void can_send_task_create();
-..\TASK\can_send_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\can_send_task.c(61): warning:  #1-D: last line of file ends without a newline
-  }
-..\TASK\can_send_task.c: 63 warnings, 0 errors
 compiling task_init.c...
 ..\TASK\task_init.h(59): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -3590,9 +3440,9 @@ compiling task_init.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -3619,6 +3469,134 @@ compiling task_init.c...
 ..\TASK\task_init.c(72): warning:  #1-D: last line of file ends without a newline
   }
 ..\TASK\task_init.c: 63 warnings, 0 errors
+compiling can_send_task.c...
+..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\task_init.h(58): warning:  #1295-D: Deprecated declaration Task_Init - give arg types
+  void Task_Init();
+..\TASK\task_init.h(59): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\led_task.h(5): warning:  #1295-D: Deprecated declaration led_task_create - give arg types
+  void led_task_create();
+..\TASK\led_task.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\imu_task.h(5): warning:  #1295-D: Deprecated declaration imu_task_create - give arg types
+  void imu_task_create();
+..\TASK\imu_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\shoot_task.h(23): warning:  #1295-D: Deprecated declaration shoot_task_create - give arg types
+  void shoot_task_create();
+..\TASK\shoot_task.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\gimbal_task.h(13): warning:  #1295-D: Deprecated declaration gimbal_task_create - give arg types
+  void gimbal_task_create();
+..\TASK\gimbal_task.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\chassis_task.h(31): warning:  #1295-D: Deprecated declaration chassis_task_create - give arg types
+  void chassis_task_create();
+..\TASK\chassis_task.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\ui_task.h(5): warning:  #1295-D: Deprecated declaration ui_task_create - give arg types
+  void ui_task_create();
+..\TASK\ui_task.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\can_send_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\mode_task.h(5): warning:  #1295-D: Deprecated declaration mode_task_create - give arg types
+  void mode_task_create();
+..\TASK\mode_task.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\supercap_task.h(5): warning:  #1295-D: Deprecated declaration supercap_task_create - give arg types
+  void supercap_task_create();
+..\TASK\supercap_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\nuc_task.h(5): warning:  #1295-D: Deprecated declaration nuc_task_create - give arg types
+  void nuc_task_create();
+..\TASK\nuc_task.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\led.h(21): warning:  #1295-D: Deprecated declaration LED_Init - give arg types
+  void LED_Init();//初始化LED灯			    
+..\HARDWARE\laser.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\dr16.h(72): warning:  #1295-D: Deprecated declaration DR16_Init - give arg types
+  void DR16_Init();
+..\HARDWARE\dr16.h(74): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\tim6.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\pid.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\can.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\spi.h(5): warning:  #1295-D: Deprecated declaration SPI_IMU_Init - give arg types
+  void SPI_IMU_Init();
+..\HARDWARE\spi.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\imu.h(13): warning:  #1295-D: Deprecated declaration IMU_Ahrs_Update - give arg types
+  void IMU_Ahrs_Update();
+..\HARDWARE\imu.h(14): warning:  #1295-D: Deprecated declaration IMU_Attitude_Update - give arg types
+  void IMU_Attitude_Update();
+..\HARDWARE\nuc.h(7): warning:  #1295-D: Deprecated declaration NUC_Init - give arg types
+  void NUC_Init();
+..\HARDWARE\nuc.h(18): warning:  #1295-D: Deprecated declaration NUC_Send_Data - give arg types
+  void NUC_Send_Data();
+..\HARDWARE\nuc.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\shoot.h(5): warning:  #1295-D: Deprecated declaration Shoot_Init - give arg types
+  void Shoot_Init();
+..\HARDWARE\shoot.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\cover.h(5): warning:  #1295-D: Deprecated declaration Cover_Init - give arg types
+  void Cover_Init();
+..\HARDWARE\cover.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\referee.h(6): warning:  #1295-D: Deprecated declaration Referee_Init - give arg types
+  void Referee_Init();
+..\HARDWARE\referee.h(9): warning:  #1295-D: Deprecated declaration referee_data_send - give arg types
+  void referee_data_send();
+..\HARDWARE\referee.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\beep.h(18): warning:  #1295-D: Deprecated declaration Beep_Init - give arg types
+  void Beep_Init();
+..\HARDWARE\beep.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\bmi088.h(9): warning:  #1295-D: Deprecated declaration BMI088_SPI_Init - give arg types
+  void BMI088_SPI_Init();
+..\HARDWARE\bmi088.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\bmi088driver.h(103): warning:  #1295-D: Deprecated declaration BMI088_Get_Data - give arg types
+  void BMI088_Get_Data();
+..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+  void Rudder_Init();
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\custom_ui.h(138): warning:  #1295-D: Deprecated declaration Show_UI - give arg types
+  void Show_UI();
+..\HARDWARE\custom_ui.h(139): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\gimbal.h(16): warning:  #1295-D: Deprecated declaration Gimbal_Init - give arg types
+  void Gimbal_Init();
+..\HARDWARE\gimbal.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\chassis.h(8): warning:  #1295-D: Deprecated declaration Chassis_Init - give arg types
+  void Chassis_Init();
+..\HARDWARE\chassis.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\can_handle.h(55): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\can_send_task.h(5): warning:  #1295-D: Deprecated declaration can_send_task_create - give arg types
+  void can_send_task_create();
+..\TASK\can_send_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\can_send_task.c(61): warning:  #1-D: last line of file ends without a newline
+  }
+..\TASK\can_send_task.c: 63 warnings, 0 errors
 compiling chassis_task.c...
 ..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -3718,9 +3696,9 @@ compiling chassis_task.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -3764,137 +3742,27 @@ compiling chassis_task.c...
   		power_limit = (SuperCap_Info.Low_Filter_Vot - 10.0) / (SuperCap_Info.InputVot - 10.0);
 ..\TASK\chassis_task.c(215): warning:  #1035-D: single-precision operand implicitly converted to double-precision
   		if(power_limit >= 1.0)
-..\TASK\chassis_task.c(465): warning:  #1-D: last line of file ends without a newline
+..\TASK\chassis_task.c(494): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(Rudder_Data.XYZ_Angle[i] > 180.0*ANGLE_TO_RAD)
+..\TASK\chassis_task.c(496): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XYZ_Angle[i] - 360.0*ANGLE_TO_RAD;
+..\TASK\chassis_task.c(500): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XYZ_Angle[i] + 360.0*ANGLE_TO_RAD;
+..\TASK\chassis_task.c(509): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(Rudder_Data.XYZ_Angle[i] - Rudder_Data.XYZ_Angle_Current[i] > 180.0 * ANGLE_TO_RAD)
+..\TASK\chassis_task.c(512): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i] - 360.0*ANGLE_TO_RAD;
+..\TASK\chassis_task.c(518): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i] + 360.0*ANGLE_TO_RAD;			
+..\TASK\chassis_task.c(530): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(Rudder_Data.XYZ_Angle_Target[i] - Rudder_Data.XYZ_Angle_Current[i] > 90.0*ANGLE_TO_RAD)
+..\TASK\chassis_task.c(532): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle_Target[i] - 180.0*ANGLE_TO_RAD;
+..\TASK\chassis_task.c(537): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle_Target[i] + 180.0*ANGLE_TO_RAD;			
+..\TASK\chassis_task.c(579): warning:  #1-D: last line of file ends without a newline
   }
-..\TASK\chassis_task.c: 73 warnings, 0 errors
-compiling imu_task.c...
-..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\task_init.h(58): warning:  #1295-D: Deprecated declaration Task_Init - give arg types
-  void Task_Init();
-..\TASK\task_init.h(59): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\led_task.h(5): warning:  #1295-D: Deprecated declaration led_task_create - give arg types
-  void led_task_create();
-..\TASK\led_task.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\imu_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\shoot_task.h(23): warning:  #1295-D: Deprecated declaration shoot_task_create - give arg types
-  void shoot_task_create();
-..\TASK\shoot_task.h(25): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\gimbal_task.h(13): warning:  #1295-D: Deprecated declaration gimbal_task_create - give arg types
-  void gimbal_task_create();
-..\TASK\gimbal_task.h(16): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\chassis_task.h(31): warning:  #1295-D: Deprecated declaration chassis_task_create - give arg types
-  void chassis_task_create();
-..\TASK\chassis_task.h(34): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\ui_task.h(5): warning:  #1295-D: Deprecated declaration ui_task_create - give arg types
-  void ui_task_create();
-..\TASK\ui_task.h(6): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\can_send_task.h(5): warning:  #1295-D: Deprecated declaration can_send_task_create - give arg types
-  void can_send_task_create();
-..\TASK\can_send_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\mode_task.h(5): warning:  #1295-D: Deprecated declaration mode_task_create - give arg types
-  void mode_task_create();
-..\TASK\mode_task.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\supercap_task.h(5): warning:  #1295-D: Deprecated declaration supercap_task_create - give arg types
-  void supercap_task_create();
-..\TASK\supercap_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\nuc_task.h(5): warning:  #1295-D: Deprecated declaration nuc_task_create - give arg types
-  void nuc_task_create();
-..\TASK\nuc_task.h(9): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\led.h(21): warning:  #1295-D: Deprecated declaration LED_Init - give arg types
-  void LED_Init();//初始化LED灯			    
-..\HARDWARE\laser.h(13): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\dr16.h(72): warning:  #1295-D: Deprecated declaration DR16_Init - give arg types
-  void DR16_Init();
-..\HARDWARE\dr16.h(74): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\tim6.h(10): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\pid.h(45): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\can.h(18): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\spi.h(5): warning:  #1295-D: Deprecated declaration SPI_IMU_Init - give arg types
-  void SPI_IMU_Init();
-..\HARDWARE\spi.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\imu.h(13): warning:  #1295-D: Deprecated declaration IMU_Ahrs_Update - give arg types
-  void IMU_Ahrs_Update();
-..\HARDWARE\imu.h(14): warning:  #1295-D: Deprecated declaration IMU_Attitude_Update - give arg types
-  void IMU_Attitude_Update();
-..\HARDWARE\nuc.h(7): warning:  #1295-D: Deprecated declaration NUC_Init - give arg types
-  void NUC_Init();
-..\HARDWARE\nuc.h(18): warning:  #1295-D: Deprecated declaration NUC_Send_Data - give arg types
-  void NUC_Send_Data();
-..\HARDWARE\nuc.h(21): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\shoot.h(5): warning:  #1295-D: Deprecated declaration Shoot_Init - give arg types
-  void Shoot_Init();
-..\HARDWARE\shoot.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\cover.h(5): warning:  #1295-D: Deprecated declaration Cover_Init - give arg types
-  void Cover_Init();
-..\HARDWARE\cover.h(19): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\referee.h(6): warning:  #1295-D: Deprecated declaration Referee_Init - give arg types
-  void Referee_Init();
-..\HARDWARE\referee.h(9): warning:  #1295-D: Deprecated declaration referee_data_send - give arg types
-  void referee_data_send();
-..\HARDWARE\referee.h(11): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\beep.h(18): warning:  #1295-D: Deprecated declaration Beep_Init - give arg types
-  void Beep_Init();
-..\HARDWARE\beep.h(21): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\bmi088.h(9): warning:  #1295-D: Deprecated declaration BMI088_SPI_Init - give arg types
-  void BMI088_SPI_Init();
-..\HARDWARE\bmi088.h(11): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\bmi088driver.h(103): warning:  #1295-D: Deprecated declaration BMI088_Get_Data - give arg types
-  void BMI088_Get_Data();
-..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
-  void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\custom_ui.h(138): warning:  #1295-D: Deprecated declaration Show_UI - give arg types
-  void Show_UI();
-..\HARDWARE\custom_ui.h(139): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\gimbal.h(16): warning:  #1295-D: Deprecated declaration Gimbal_Init - give arg types
-  void Gimbal_Init();
-..\HARDWARE\gimbal.h(18): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\chassis.h(8): warning:  #1295-D: Deprecated declaration Chassis_Init - give arg types
-  void Chassis_Init();
-..\HARDWARE\chassis.h(10): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HARDWARE\can_handle.h(55): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\imu_task.h(5): warning:  #1295-D: Deprecated declaration imu_task_create - give arg types
-  void imu_task_create();
-..\TASK\imu_task.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\TASK\imu_task.c(45): warning:  #1-D: last line of file ends without a newline
-  }
-..\TASK\imu_task.c: 63 warnings, 0 errors
+..\TASK\chassis_task.c: 82 warnings, 0 errors
 compiling gimbal_task.c...
 ..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -3994,9 +3862,9 @@ compiling gimbal_task.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -4033,6 +3901,134 @@ compiling gimbal_task.c...
 ..\TASK\gimbal_task.c(145): warning:  #1-D: last line of file ends without a newline
   }
 ..\TASK\gimbal_task.c: 68 warnings, 0 errors
+compiling imu_task.c...
+..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\task_init.h(58): warning:  #1295-D: Deprecated declaration Task_Init - give arg types
+  void Task_Init();
+..\TASK\task_init.h(59): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\led_task.h(5): warning:  #1295-D: Deprecated declaration led_task_create - give arg types
+  void led_task_create();
+..\TASK\led_task.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\imu_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\shoot_task.h(23): warning:  #1295-D: Deprecated declaration shoot_task_create - give arg types
+  void shoot_task_create();
+..\TASK\shoot_task.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\gimbal_task.h(13): warning:  #1295-D: Deprecated declaration gimbal_task_create - give arg types
+  void gimbal_task_create();
+..\TASK\gimbal_task.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\chassis_task.h(31): warning:  #1295-D: Deprecated declaration chassis_task_create - give arg types
+  void chassis_task_create();
+..\TASK\chassis_task.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\ui_task.h(5): warning:  #1295-D: Deprecated declaration ui_task_create - give arg types
+  void ui_task_create();
+..\TASK\ui_task.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\can_send_task.h(5): warning:  #1295-D: Deprecated declaration can_send_task_create - give arg types
+  void can_send_task_create();
+..\TASK\can_send_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\mode_task.h(5): warning:  #1295-D: Deprecated declaration mode_task_create - give arg types
+  void mode_task_create();
+..\TASK\mode_task.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\supercap_task.h(5): warning:  #1295-D: Deprecated declaration supercap_task_create - give arg types
+  void supercap_task_create();
+..\TASK\supercap_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\nuc_task.h(5): warning:  #1295-D: Deprecated declaration nuc_task_create - give arg types
+  void nuc_task_create();
+..\TASK\nuc_task.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\led.h(21): warning:  #1295-D: Deprecated declaration LED_Init - give arg types
+  void LED_Init();//初始化LED灯			    
+..\HARDWARE\laser.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\dr16.h(72): warning:  #1295-D: Deprecated declaration DR16_Init - give arg types
+  void DR16_Init();
+..\HARDWARE\dr16.h(74): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\tim6.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\pid.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\can.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\spi.h(5): warning:  #1295-D: Deprecated declaration SPI_IMU_Init - give arg types
+  void SPI_IMU_Init();
+..\HARDWARE\spi.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\imu.h(13): warning:  #1295-D: Deprecated declaration IMU_Ahrs_Update - give arg types
+  void IMU_Ahrs_Update();
+..\HARDWARE\imu.h(14): warning:  #1295-D: Deprecated declaration IMU_Attitude_Update - give arg types
+  void IMU_Attitude_Update();
+..\HARDWARE\nuc.h(7): warning:  #1295-D: Deprecated declaration NUC_Init - give arg types
+  void NUC_Init();
+..\HARDWARE\nuc.h(18): warning:  #1295-D: Deprecated declaration NUC_Send_Data - give arg types
+  void NUC_Send_Data();
+..\HARDWARE\nuc.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\shoot.h(5): warning:  #1295-D: Deprecated declaration Shoot_Init - give arg types
+  void Shoot_Init();
+..\HARDWARE\shoot.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\cover.h(5): warning:  #1295-D: Deprecated declaration Cover_Init - give arg types
+  void Cover_Init();
+..\HARDWARE\cover.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\referee.h(6): warning:  #1295-D: Deprecated declaration Referee_Init - give arg types
+  void Referee_Init();
+..\HARDWARE\referee.h(9): warning:  #1295-D: Deprecated declaration referee_data_send - give arg types
+  void referee_data_send();
+..\HARDWARE\referee.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\beep.h(18): warning:  #1295-D: Deprecated declaration Beep_Init - give arg types
+  void Beep_Init();
+..\HARDWARE\beep.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\bmi088.h(9): warning:  #1295-D: Deprecated declaration BMI088_SPI_Init - give arg types
+  void BMI088_SPI_Init();
+..\HARDWARE\bmi088.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\bmi088driver.h(103): warning:  #1295-D: Deprecated declaration BMI088_Get_Data - give arg types
+  void BMI088_Get_Data();
+..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+  void Rudder_Init();
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\custom_ui.h(138): warning:  #1295-D: Deprecated declaration Show_UI - give arg types
+  void Show_UI();
+..\HARDWARE\custom_ui.h(139): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\gimbal.h(16): warning:  #1295-D: Deprecated declaration Gimbal_Init - give arg types
+  void Gimbal_Init();
+..\HARDWARE\gimbal.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\chassis.h(8): warning:  #1295-D: Deprecated declaration Chassis_Init - give arg types
+  void Chassis_Init();
+..\HARDWARE\chassis.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\can_handle.h(55): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\imu_task.h(5): warning:  #1295-D: Deprecated declaration imu_task_create - give arg types
+  void imu_task_create();
+..\TASK\imu_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\imu_task.c(45): warning:  #1-D: last line of file ends without a newline
+  }
+..\TASK\imu_task.c: 63 warnings, 0 errors
 compiling led_task.c...
 ..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -4132,9 +4128,9 @@ compiling led_task.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -4260,9 +4256,9 @@ compiling mode_task.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -4402,9 +4398,9 @@ compiling nuc_task.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -4530,9 +4526,9 @@ compiling shoot_task.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -4666,9 +4662,9 @@ compiling supercap_task.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -4794,9 +4790,9 @@ compiling ui_task.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -4924,9 +4920,9 @@ compiling kalman.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -5048,9 +5044,9 @@ compiling ramp.c...
   void BMI088_Get_Data();
 ..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
   #endif
-..\HARDWARE\rudder.h(21): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
   void Rudder_Init();
-..\HARDWARE\rudder.h(23): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -5072,9 +5068,9 @@ compiling ramp.c...
   #endif
 ..\TOOL\ramp.c: 61 warnings, 0 errors
 linking...
-Program Size: Code=52662 RO-data=1898 RW-data=720 ZI-data=84176  
+Program Size: Code=54766 RO-data=1898 RW-data=720 ZI-data=84304  
 FromELF: creating hex file...
-".\Objects\RM2022_Infantry_407.axf" - 0 Error(s), 2472 Warning(s).
+".\Objects\RM2022_Infantry_407.axf" - 0 Error(s), 2481 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -5087,7 +5083,7 @@ Package Vendor: Keil
   D:\SoftWare\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:13
+Build Time Elapsed:  00:00:11
 </pre>
 </body>
 </html>
