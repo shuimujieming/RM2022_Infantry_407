@@ -4,7 +4,7 @@
 .\objects\laser.o: ..\SYSTEM\sys\sys.h
 .\objects\laser.o: ..\USER\stm32f4xx.h
 .\objects\laser.o: ..\CORE\core_cm4.h
-.\objects\laser.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\laser.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\laser.o: ..\CORE\core_cmInstr.h
 .\objects\laser.o: ..\CORE\core_cmFunc.h
 .\objects\laser.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\laser.o: ..\FWLIB\inc\stm32f4xx_dac.h
 .\objects\laser.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\laser.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-.\objects\laser.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\laser.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\laser.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\laser.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\laser.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\laser.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\laser.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\laser.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\laser.o: ..\FreeRTOS\include\projdefs.h
 .\objects\laser.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\laser.o: ..\HARDWARE\imu.h
 .\objects\laser.o: ..\HARDWARE\mpu6500.h
 .\objects\laser.o: ..\HARDWARE\mytype.h
-.\objects\laser.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\laser.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\laser.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\laser.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\laser.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\laser.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\laser.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\laser.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\laser.o: ..\HARDWARE\ist8310.h
 .\objects\laser.o: ..\HARDWARE\nuc.h
 .\objects\laser.o: ..\HARDWARE\shoot.h

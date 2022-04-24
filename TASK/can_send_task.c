@@ -49,7 +49,7 @@ void can_send_task(void *p_arg)
 		}
 		else if(EventValue & CHASSIS_SIGNAL)
 		{
-//			CAN1_TX_Chassis();
+			CAN1_TX_Chassis();
 			CAN2_TX_Rudder();
 		}
 		else if(EventValue & SUPERCAP_SIGNAL)

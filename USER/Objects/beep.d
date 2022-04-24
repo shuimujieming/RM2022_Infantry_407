@@ -4,7 +4,7 @@
 .\objects\beep.o: ..\SYSTEM\sys\sys.h
 .\objects\beep.o: ..\USER\stm32f4xx.h
 .\objects\beep.o: ..\CORE\core_cm4.h
-.\objects\beep.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\beep.o: ..\CORE\core_cmInstr.h
 .\objects\beep.o: ..\CORE\core_cmFunc.h
 .\objects\beep.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\beep.o: ..\FWLIB\inc\stm32f4xx_dac.h
 .\objects\beep.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\beep.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-.\objects\beep.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\beep.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\beep.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\beep.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\beep.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\beep.o: ..\FreeRTOS\include\projdefs.h
 .\objects\beep.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\beep.o: ..\HARDWARE\imu.h
 .\objects\beep.o: ..\HARDWARE\mpu6500.h
 .\objects\beep.o: ..\HARDWARE\mytype.h
-.\objects\beep.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\beep.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\beep.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\beep.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\beep.o: ..\HARDWARE\ist8310.h
 .\objects\beep.o: ..\HARDWARE\nuc.h
 .\objects\beep.o: ..\HARDWARE\shoot.h

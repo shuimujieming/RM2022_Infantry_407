@@ -4,7 +4,7 @@
 .\objects\shoot_task.o: ..\SYSTEM\sys\sys.h
 .\objects\shoot_task.o: ..\USER\stm32f4xx.h
 .\objects\shoot_task.o: ..\CORE\core_cm4.h
-.\objects\shoot_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\shoot_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\shoot_task.o: ..\CORE\core_cmInstr.h
 .\objects\shoot_task.o: ..\CORE\core_cmFunc.h
 .\objects\shoot_task.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\shoot_task.o: ..\FWLIB\inc\stm32f4xx_dac.h
 .\objects\shoot_task.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\shoot_task.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-.\objects\shoot_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\shoot_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\shoot_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\shoot_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\shoot_task.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\shoot_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\shoot_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\shoot_task.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\shoot_task.o: ..\FreeRTOS\include\projdefs.h
 .\objects\shoot_task.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\shoot_task.o: ..\HARDWARE\imu.h
 .\objects\shoot_task.o: ..\HARDWARE\mpu6500.h
 .\objects\shoot_task.o: ..\HARDWARE\mytype.h
-.\objects\shoot_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\shoot_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\shoot_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\shoot_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\shoot_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\shoot_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\shoot_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\shoot_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\shoot_task.o: ..\HARDWARE\ist8310.h
 .\objects\shoot_task.o: ..\HARDWARE\nuc.h
 .\objects\shoot_task.o: ..\HARDWARE\shoot.h

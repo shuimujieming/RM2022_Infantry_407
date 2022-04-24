@@ -4,7 +4,7 @@
 .\objects\kalman.o: ..\SYSTEM\sys\sys.h
 .\objects\kalman.o: ..\USER\stm32f4xx.h
 .\objects\kalman.o: ..\CORE\core_cm4.h
-.\objects\kalman.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\kalman.o: ..\CORE\core_cmInstr.h
 .\objects\kalman.o: ..\CORE\core_cmFunc.h
 .\objects\kalman.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\kalman.o: ..\FWLIB\inc\stm32f4xx_dac.h
 .\objects\kalman.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\kalman.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-.\objects\kalman.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\kalman.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\kalman.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\kalman.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\kalman.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\kalman.o: ..\FreeRTOS\include\projdefs.h
 .\objects\kalman.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\kalman.o: ..\HARDWARE\imu.h
 .\objects\kalman.o: ..\HARDWARE\mpu6500.h
 .\objects\kalman.o: ..\HARDWARE\mytype.h
-.\objects\kalman.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\kalman.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\kalman.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\kalman.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\kalman.o: ..\HARDWARE\ist8310.h
 .\objects\kalman.o: ..\HARDWARE\nuc.h
 .\objects\kalman.o: ..\HARDWARE\shoot.h

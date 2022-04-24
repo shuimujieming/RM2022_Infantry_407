@@ -4,7 +4,7 @@
 .\objects\rudder.o: ..\SYSTEM\sys\sys.h
 .\objects\rudder.o: ..\USER\stm32f4xx.h
 .\objects\rudder.o: ..\CORE\core_cm4.h
-.\objects\rudder.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\rudder.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\rudder.o: ..\CORE\core_cmInstr.h
 .\objects\rudder.o: ..\CORE\core_cmFunc.h
 .\objects\rudder.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\rudder.o: ..\FWLIB\inc\stm32f4xx_dac.h
 .\objects\rudder.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\rudder.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-.\objects\rudder.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\rudder.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\rudder.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\rudder.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\rudder.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\rudder.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\rudder.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\rudder.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\rudder.o: ..\FreeRTOS\include\projdefs.h
 .\objects\rudder.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\rudder.o: ..\HARDWARE\imu.h
 .\objects\rudder.o: ..\HARDWARE\mpu6500.h
 .\objects\rudder.o: ..\HARDWARE\mytype.h
-.\objects\rudder.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\rudder.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\rudder.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\rudder.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\rudder.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\rudder.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\rudder.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\rudder.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\rudder.o: ..\HARDWARE\ist8310.h
 .\objects\rudder.o: ..\HARDWARE\nuc.h
 .\objects\rudder.o: ..\HARDWARE\shoot.h

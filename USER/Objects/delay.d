@@ -3,7 +3,7 @@
 .\objects\delay.o: ..\SYSTEM\sys\sys.h
 .\objects\delay.o: ..\USER\stm32f4xx.h
 .\objects\delay.o: ..\CORE\core_cm4.h
-.\objects\delay.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\delay.o: ..\CORE\core_cmInstr.h
 .\objects\delay.o: ..\CORE\core_cmFunc.h
 .\objects\delay.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\delay.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\delay.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 .\objects\delay.o: ..\USER\main.h
-.\objects\delay.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\delay.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\delay.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\delay.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\delay.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\delay.o: ..\FreeRTOS\include\projdefs.h
 .\objects\delay.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\delay.o: ..\HARDWARE\imu.h
 .\objects\delay.o: ..\HARDWARE\mpu6500.h
 .\objects\delay.o: ..\HARDWARE\mytype.h
-.\objects\delay.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\delay.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\delay.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\delay.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\delay.o: ..\HARDWARE\ist8310.h
 .\objects\delay.o: ..\HARDWARE\nuc.h
 .\objects\delay.o: ..\HARDWARE\shoot.h

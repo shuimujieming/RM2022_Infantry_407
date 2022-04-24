@@ -483,81 +483,81 @@ void Chassis_Speed_Calc(float vx,float vy,float vw)
 //	Chassis_Speed.wheel_speed[3] = Rudder_Data.XYZ_Speed[3];
 
 
-	/*              有就近原则的逻辑                */
-	for(int i =0;i<4;i++)
-	{
-    //最终合成的XYZ舵向角以及轮速
-		Rudder_Data.XYZ_Angle[i] = Rudder_Data.XY_Angle_Real + atan2f(Rudder_Data.XYZ_Angle_A[i],Rudder_Data.XYZ_Angle_B[i]);	
-		Rudder_Data.XYZ_Speed[i] = sqrt(Rudder_Data.XYZ_Angle_A[i]*Rudder_Data.XYZ_Angle_A[i] + Rudder_Data.XYZ_Angle_B[i]*Rudder_Data.XYZ_Angle_B[i]);
-		
-		//将舵向角范围调整至+-180度
-		if(Rudder_Data.XYZ_Angle[i] > 180.0*ANGLE_TO_RAD)
-		{
-			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XYZ_Angle[i] - 360.0*ANGLE_TO_RAD;
-		}
-		else if(Rudder_Data.XYZ_Angle[i] < -180.0*ANGLE_TO_RAD)
-		{
-			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XYZ_Angle[i] + 360.0*ANGLE_TO_RAD;
-		}
+//	/*              有就近原则的逻辑                */
+//	for(int i =0;i<4;i++)
+//	{
+//    //最终合成的XYZ舵向角以及轮速
+//		Rudder_Data.XYZ_Angle[i] = Rudder_Data.XY_Angle_Real + atan2f(Rudder_Data.XYZ_Angle_A[i],Rudder_Data.XYZ_Angle_B[i]);	
+//		Rudder_Data.XYZ_Speed[i] = sqrt(Rudder_Data.XYZ_Angle_A[i]*Rudder_Data.XYZ_Angle_A[i] + Rudder_Data.XYZ_Angle_B[i]*Rudder_Data.XYZ_Angle_B[i]);
+//		
+//		//将舵向角范围调整至+-180度
+//		if(Rudder_Data.XYZ_Angle[i] > 180.0*ANGLE_TO_RAD)
+//		{
+//			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XYZ_Angle[i] - 360.0*ANGLE_TO_RAD;
+//		}
+//		else if(Rudder_Data.XYZ_Angle[i] < -180.0*ANGLE_TO_RAD)
+//		{
+//			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XYZ_Angle[i] + 360.0*ANGLE_TO_RAD;
+//		}
 
-		//当前舵向角
-		Rudder_Data.XYZ_Angle_Current[i] = (CAN_Rudder[i].Current_MechAngle - CAN_Rudder[i].Init_MechAngle) / 8191.0f * 360.0f * ANGLE_TO_RAD;
-		
-		//角度跳变处理，+-180度边界上
-		/*！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！*/
-		//假如当前-170°，目标170°
-		if(Rudder_Data.XYZ_Angle[i] - Rudder_Data.XYZ_Angle_Current[i] > 180.0 * ANGLE_TO_RAD)
-		{
-			//则设目标为 170 - 360 = -190°
-			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i] - 360.0*ANGLE_TO_RAD;
-		}
-		//假如当前170°，目标-170°
-		else if(Rudder_Data.XYZ_Angle[i] - Rudder_Data.XYZ_Angle_Current[i] < -180.0 * ANGLE_TO_RAD)
-		{
-			//则设目标为-170 + 360 = 190°
-			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i] + 360.0*ANGLE_TO_RAD;			
-		}
-		else
-		{
-			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i];
-		}
-		
-		//假如当前170°，目标-20°，
-		//先通过上面的跳变运算，得出目标为 -20 + 360 = 340° 
-		//就近原则下我则应该调整为160°，轮子反向
-		//则由340°- 170°判断是否大于90°
-		//调整目标为340 - 180 = 160°，然后轮子反向
-		if(Rudder_Data.XYZ_Angle_Target[i] - Rudder_Data.XYZ_Angle_Current[i] > 90.0*ANGLE_TO_RAD)
-		{
-			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle_Target[i] - 180.0*ANGLE_TO_RAD;
-			Rudder_Data.XYZ_Speed_Dir = -1;
-		}
-		else if(Rudder_Data.XYZ_Angle_Target[i] - Rudder_Data.XYZ_Angle_Current[i] < -90.0*ANGLE_TO_RAD)
-		{
-			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle_Target[i] + 180.0*ANGLE_TO_RAD;			
-			Rudder_Data.XYZ_Speed_Dir = -1;
-		}
-		else
-		{
-			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle_Target[i];
-			Rudder_Data.XYZ_Speed_Dir = 1;
-		}
-		
-    //舵向角PID计算
-		PID_Rudder_Angle[i].PIDout = Pid_Calc(&PID_Rudder_Angle[i],Rudder_Data.XYZ_Angle_Current[i],Rudder_Data.XYZ_Angle_Target[i]);
-		CAN_Rudder[i].Target_Current = Pid_Calc(&PID_Rudder_Speed[i],CAN_Rudder[i].Current_Speed,PID_Rudder_Angle[i].PIDout);
-		
-		//记录上次舵向角
-		Rudder_Data.XYZ_Angle_Last[i] = Rudder_Data.XYZ_Angle[i];
-	}	
-	
-  //轮速输出
-	Chassis_Speed.wheel_speed[0] = Rudder_Data.XYZ_Speed[0] * Rudder_Data.XYZ_Speed_Dir;
-	Chassis_Speed.wheel_speed[1] = -Rudder_Data.XYZ_Speed[1] * Rudder_Data.XYZ_Speed_Dir;
-	Chassis_Speed.wheel_speed[2] = -Rudder_Data.XYZ_Speed[2] * Rudder_Data.XYZ_Speed_Dir;
-	Chassis_Speed.wheel_speed[3] = Rudder_Data.XYZ_Speed[3] * Rudder_Data.XYZ_Speed_Dir;
+//		//当前舵向角
+//		Rudder_Data.XYZ_Angle_Current[i] = (CAN_Rudder[i].Current_MechAngle - CAN_Rudder[i].Init_MechAngle) / 8191.0f * 360.0f * ANGLE_TO_RAD;
+//		
+//		//角度跳变处理，+-180度边界上
+//		/*！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！*/
+//		//假如当前-170°，目标170°
+//		if(Rudder_Data.XYZ_Angle[i] - Rudder_Data.XYZ_Angle_Current[i] > 180.0 * ANGLE_TO_RAD)
+//		{
+//			//则设目标为 170 - 360 = -190°
+//			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i] - 360.0*ANGLE_TO_RAD;
+//		}
+//		//假如当前170°，目标-170°
+//		else if(Rudder_Data.XYZ_Angle[i] - Rudder_Data.XYZ_Angle_Current[i] < -180.0 * ANGLE_TO_RAD)
+//		{
+//			//则设目标为-170 + 360 = 190°
+//			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i] + 360.0*ANGLE_TO_RAD;			
+//		}
+//		else
+//		{
+//			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i];
+//		}
+//		
+//		//假如当前170°，目标-20°，
+//		//先通过上面的跳变运算，得出目标为 -20 + 360 = 340° 
+//		//就近原则下我则应该调整为160°，轮子反向
+//		//则由340°- 170°判断是否大于90°
+//		//调整目标为340 - 180 = 160°，然后轮子反向
+//		if(Rudder_Data.XYZ_Angle_Target[i] - Rudder_Data.XYZ_Angle_Current[i] > 90.0*ANGLE_TO_RAD)
+//		{
+//			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle_Target[i] - 180.0*ANGLE_TO_RAD;
+//			Rudder_Data.XYZ_Speed_Dir = -1;
+//		}
+//		else if(Rudder_Data.XYZ_Angle_Target[i] - Rudder_Data.XYZ_Angle_Current[i] < -90.0*ANGLE_TO_RAD)
+//		{
+//			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle_Target[i] + 180.0*ANGLE_TO_RAD;			
+//			Rudder_Data.XYZ_Speed_Dir = -1;
+//		}
+//		else
+//		{
+//			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle_Target[i];
+//			Rudder_Data.XYZ_Speed_Dir = 1;
+//		}
+//		
+//    //舵向角PID计算
+//		PID_Rudder_Angle[i].PIDout = Pid_Calc(&PID_Rudder_Angle[i],Rudder_Data.XYZ_Angle_Current[i],Rudder_Data.XYZ_Angle_Target[i]);
+//		CAN_Rudder[i].Target_Current = Pid_Calc(&PID_Rudder_Speed[i],CAN_Rudder[i].Current_Speed,PID_Rudder_Angle[i].PIDout);
+//		
+//		//记录上次舵向角
+//		Rudder_Data.XYZ_Angle_Last[i] = Rudder_Data.XYZ_Angle[i];
+//	}	
+//	
+//  //轮速输出
+//	Chassis_Speed.wheel_speed[0] = Rudder_Data.XYZ_Speed[0] * Rudder_Data.XYZ_Speed_Dir;
+//	Chassis_Speed.wheel_speed[1] = -Rudder_Data.XYZ_Speed[1] * Rudder_Data.XYZ_Speed_Dir;
+//	Chassis_Speed.wheel_speed[2] = -Rudder_Data.XYZ_Speed[2] * Rudder_Data.XYZ_Speed_Dir;
+//	Chassis_Speed.wheel_speed[3] = Rudder_Data.XYZ_Speed[3] * Rudder_Data.XYZ_Speed_Dir;
 
-	
+//	
 	//速度限幅调整
 	//最大值寻找
 	for(int i = 0;i<4;i++)

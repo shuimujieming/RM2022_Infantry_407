@@ -4,7 +4,7 @@
 .\objects\can_handle.o: ..\SYSTEM\sys\sys.h
 .\objects\can_handle.o: ..\USER\stm32f4xx.h
 .\objects\can_handle.o: ..\CORE\core_cm4.h
-.\objects\can_handle.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\can_handle.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\can_handle.o: ..\CORE\core_cmInstr.h
 .\objects\can_handle.o: ..\CORE\core_cmFunc.h
 .\objects\can_handle.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\can_handle.o: ..\FWLIB\inc\stm32f4xx_dac.h
 .\objects\can_handle.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\can_handle.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-.\objects\can_handle.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\can_handle.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\can_handle.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\can_handle.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\can_handle.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\can_handle.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\can_handle.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\can_handle.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\can_handle.o: ..\FreeRTOS\include\projdefs.h
 .\objects\can_handle.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\can_handle.o: ..\HARDWARE\imu.h
 .\objects\can_handle.o: ..\HARDWARE\mpu6500.h
 .\objects\can_handle.o: ..\HARDWARE\mytype.h
-.\objects\can_handle.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\can_handle.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\can_handle.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\can_handle.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\can_handle.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\can_handle.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\can_handle.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\can_handle.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\can_handle.o: ..\HARDWARE\ist8310.h
 .\objects\can_handle.o: ..\HARDWARE\nuc.h
 .\objects\can_handle.o: ..\HARDWARE\shoot.h

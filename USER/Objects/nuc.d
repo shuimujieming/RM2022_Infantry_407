@@ -4,7 +4,7 @@
 .\objects\nuc.o: ..\SYSTEM\sys\sys.h
 .\objects\nuc.o: ..\USER\stm32f4xx.h
 .\objects\nuc.o: ..\CORE\core_cm4.h
-.\objects\nuc.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\nuc.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\nuc.o: ..\CORE\core_cmInstr.h
 .\objects\nuc.o: ..\CORE\core_cmFunc.h
 .\objects\nuc.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\nuc.o: ..\FWLIB\inc\stm32f4xx_dac.h
 .\objects\nuc.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\nuc.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-.\objects\nuc.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\nuc.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\nuc.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\nuc.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\nuc.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\nuc.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\nuc.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\nuc.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\nuc.o: ..\FreeRTOS\include\projdefs.h
 .\objects\nuc.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\nuc.o: ..\HARDWARE\imu.h
 .\objects\nuc.o: ..\HARDWARE\mpu6500.h
 .\objects\nuc.o: ..\HARDWARE\mytype.h
-.\objects\nuc.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\nuc.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\nuc.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\nuc.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\nuc.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\nuc.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\nuc.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\nuc.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\nuc.o: ..\HARDWARE\ist8310.h
 .\objects\nuc.o: ..\HARDWARE\nuc.h
 .\objects\nuc.o: ..\HARDWARE\shoot.h

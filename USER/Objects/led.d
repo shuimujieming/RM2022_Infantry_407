@@ -4,7 +4,7 @@
 .\objects\led.o: ..\SYSTEM\sys\sys.h
 .\objects\led.o: ..\USER\stm32f4xx.h
 .\objects\led.o: ..\CORE\core_cm4.h
-.\objects\led.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\led.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\led.o: ..\CORE\core_cmInstr.h
 .\objects\led.o: ..\CORE\core_cmFunc.h
 .\objects\led.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\led.o: ..\FWLIB\inc\stm32f4xx_dac.h
 .\objects\led.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\led.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-.\objects\led.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\led.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\led.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\led.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\led.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\led.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\led.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\led.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\led.o: ..\FreeRTOS\include\projdefs.h
 .\objects\led.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\led.o: ..\HARDWARE\imu.h
 .\objects\led.o: ..\HARDWARE\mpu6500.h
 .\objects\led.o: ..\HARDWARE\mytype.h
-.\objects\led.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\led.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\led.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\led.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\led.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\led.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\led.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\led.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\led.o: ..\HARDWARE\ist8310.h
 .\objects\led.o: ..\HARDWARE\nuc.h
 .\objects\led.o: ..\HARDWARE\shoot.h

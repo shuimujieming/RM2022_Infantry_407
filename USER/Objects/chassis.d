@@ -4,7 +4,7 @@
 .\objects\chassis.o: ..\SYSTEM\sys\sys.h
 .\objects\chassis.o: ..\USER\stm32f4xx.h
 .\objects\chassis.o: ..\CORE\core_cm4.h
-.\objects\chassis.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\chassis.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\chassis.o: ..\CORE\core_cmInstr.h
 .\objects\chassis.o: ..\CORE\core_cmFunc.h
 .\objects\chassis.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\chassis.o: ..\FWLIB\inc\stm32f4xx_dac.h
 .\objects\chassis.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\chassis.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-.\objects\chassis.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\chassis.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\chassis.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\chassis.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\chassis.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\chassis.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\chassis.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\chassis.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\chassis.o: ..\FreeRTOS\include\projdefs.h
 .\objects\chassis.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\chassis.o: ..\HARDWARE\imu.h
 .\objects\chassis.o: ..\HARDWARE\mpu6500.h
 .\objects\chassis.o: ..\HARDWARE\mytype.h
-.\objects\chassis.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\chassis.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\chassis.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\chassis.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\chassis.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\chassis.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\chassis.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\chassis.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\chassis.o: ..\HARDWARE\ist8310.h
 .\objects\chassis.o: ..\HARDWARE\nuc.h
 .\objects\chassis.o: ..\HARDWARE\shoot.h

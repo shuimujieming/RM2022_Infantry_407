@@ -4,7 +4,7 @@
 .\objects\imu_task.o: ..\SYSTEM\sys\sys.h
 .\objects\imu_task.o: ..\USER\stm32f4xx.h
 .\objects\imu_task.o: ..\CORE\core_cm4.h
-.\objects\imu_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\imu_task.o: ..\CORE\core_cmInstr.h
 .\objects\imu_task.o: ..\CORE\core_cmFunc.h
 .\objects\imu_task.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\imu_task.o: ..\FWLIB\inc\stm32f4xx_dac.h
 .\objects\imu_task.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\imu_task.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-.\objects\imu_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\imu_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\imu_task.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\imu_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\imu_task.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\imu_task.o: ..\FreeRTOS\include\projdefs.h
 .\objects\imu_task.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\imu_task.o: ..\HARDWARE\imu.h
 .\objects\imu_task.o: ..\HARDWARE\mpu6500.h
 .\objects\imu_task.o: ..\HARDWARE\mytype.h
-.\objects\imu_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\imu_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\imu_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\imu_task.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\imu_task.o: ..\HARDWARE\ist8310.h
 .\objects\imu_task.o: ..\HARDWARE\nuc.h
 .\objects\imu_task.o: ..\HARDWARE\shoot.h

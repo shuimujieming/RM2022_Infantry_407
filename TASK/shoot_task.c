@@ -104,6 +104,21 @@ static int Block_Reverse_Time = 0;
  */
 void Shoot_Run_Control()
 {
+	//射速判断
+	if(game_robot_state.shooter_id1_17mm_speed_limit == 15)
+	{
+		shoot_bullet_speed = 4500;
+	}
+	else if(game_robot_state.shooter_id1_17mm_speed_limit == 30)
+	{
+		shoot_bullet_speed = 7000;		
+	}
+	else
+	{
+		shoot_bullet_speed = 4500;		
+	}
+	
+	
 	//单发模式
 	if(Shoot_Cmd == SHOOT_CMD_ONCE)
 	{
@@ -139,6 +154,8 @@ void Shoot_Run_Control()
 		else
 		{
 			//连发要求发弹稳定
+			//5500
+			
 			Shoot_Speed = 5500;
 		}
 	}

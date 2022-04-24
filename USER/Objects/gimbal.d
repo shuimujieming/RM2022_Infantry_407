@@ -4,7 +4,7 @@
 .\objects\gimbal.o: ..\SYSTEM\sys\sys.h
 .\objects\gimbal.o: ..\USER\stm32f4xx.h
 .\objects\gimbal.o: ..\CORE\core_cm4.h
-.\objects\gimbal.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gimbal.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\gimbal.o: ..\CORE\core_cmInstr.h
 .\objects\gimbal.o: ..\CORE\core_cmFunc.h
 .\objects\gimbal.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\gimbal.o: ..\FWLIB\inc\stm32f4xx_dac.h
 .\objects\gimbal.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\gimbal.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-.\objects\gimbal.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\gimbal.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\gimbal.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\gimbal.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\gimbal.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\gimbal.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\gimbal.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\gimbal.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\gimbal.o: ..\FreeRTOS\include\projdefs.h
 .\objects\gimbal.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\gimbal.o: ..\HARDWARE\imu.h
 .\objects\gimbal.o: ..\HARDWARE\mpu6500.h
 .\objects\gimbal.o: ..\HARDWARE\mytype.h
-.\objects\gimbal.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\gimbal.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\gimbal.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\gimbal.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\gimbal.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\gimbal.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\gimbal.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\gimbal.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\gimbal.o: ..\HARDWARE\ist8310.h
 .\objects\gimbal.o: ..\HARDWARE\nuc.h
 .\objects\gimbal.o: ..\HARDWARE\shoot.h

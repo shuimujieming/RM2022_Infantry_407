@@ -4,7 +4,7 @@
 .\objects\referee.o: ..\SYSTEM\sys\sys.h
 .\objects\referee.o: ..\USER\stm32f4xx.h
 .\objects\referee.o: ..\CORE\core_cm4.h
-.\objects\referee.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\referee.o: ..\CORE\core_cmInstr.h
 .\objects\referee.o: ..\CORE\core_cmFunc.h
 .\objects\referee.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\referee.o: ..\FWLIB\inc\stm32f4xx_dac.h
 .\objects\referee.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\referee.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-.\objects\referee.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\referee.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\referee.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\referee.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\referee.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\referee.o: ..\FreeRTOS\include\projdefs.h
 .\objects\referee.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\referee.o: ..\HARDWARE\imu.h
 .\objects\referee.o: ..\HARDWARE\mpu6500.h
 .\objects\referee.o: ..\HARDWARE\mytype.h
-.\objects\referee.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\referee.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\referee.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\referee.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\referee.o: ..\HARDWARE\ist8310.h
 .\objects\referee.o: ..\HARDWARE\nuc.h
 .\objects\referee.o: ..\HARDWARE\shoot.h

@@ -4,7 +4,7 @@
 .\objects\can.o: ..\SYSTEM\sys\sys.h
 .\objects\can.o: ..\USER\stm32f4xx.h
 .\objects\can.o: ..\CORE\core_cm4.h
-.\objects\can.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\can.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\can.o: ..\CORE\core_cmInstr.h
 .\objects\can.o: ..\CORE\core_cmFunc.h
 .\objects\can.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\can.o: ..\FWLIB\inc\stm32f4xx_dac.h
 .\objects\can.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\can.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-.\objects\can.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\can.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\can.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\can.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\can.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\can.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\can.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\can.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\can.o: ..\FreeRTOS\include\projdefs.h
 .\objects\can.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\can.o: ..\HARDWARE\imu.h
 .\objects\can.o: ..\HARDWARE\mpu6500.h
 .\objects\can.o: ..\HARDWARE\mytype.h
-.\objects\can.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\can.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\can.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\can.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\can.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\can.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\can.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\can.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\can.o: ..\HARDWARE\ist8310.h
 .\objects\can.o: ..\HARDWARE\nuc.h
 .\objects\can.o: ..\HARDWARE\shoot.h

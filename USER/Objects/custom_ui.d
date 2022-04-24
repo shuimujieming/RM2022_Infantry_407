@@ -4,7 +4,7 @@
 .\objects\custom_ui.o: ..\SYSTEM\sys\sys.h
 .\objects\custom_ui.o: ..\USER\stm32f4xx.h
 .\objects\custom_ui.o: ..\CORE\core_cm4.h
-.\objects\custom_ui.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\custom_ui.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\custom_ui.o: ..\CORE\core_cmInstr.h
 .\objects\custom_ui.o: ..\CORE\core_cmFunc.h
 .\objects\custom_ui.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 .\objects\custom_ui.o: ..\FWLIB\inc\stm32f4xx_dac.h
 .\objects\custom_ui.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 .\objects\custom_ui.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-.\objects\custom_ui.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\custom_ui.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\custom_ui.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\custom_ui.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\custom_ui.o: ..\FreeRTOS\include\FreeRTOS.h
-.\objects\custom_ui.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\custom_ui.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\custom_ui.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 .\objects\custom_ui.o: ..\FreeRTOS\include\projdefs.h
 .\objects\custom_ui.o: ..\FreeRTOS\include\portable.h
@@ -75,10 +75,10 @@
 .\objects\custom_ui.o: ..\HARDWARE\imu.h
 .\objects\custom_ui.o: ..\HARDWARE\mpu6500.h
 .\objects\custom_ui.o: ..\HARDWARE\mytype.h
-.\objects\custom_ui.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\custom_ui.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\custom_ui.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\custom_ui.o: D:\SoftWare\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\custom_ui.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\custom_ui.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\custom_ui.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\custom_ui.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\custom_ui.o: ..\HARDWARE\ist8310.h
 .\objects\custom_ui.o: ..\HARDWARE\nuc.h
 .\objects\custom_ui.o: ..\HARDWARE\shoot.h
