@@ -161,13 +161,13 @@ void chassis_task(void *p_arg)
 void Chassis_Power_Limit()
 {
 		//底盘功率控制
-		if(power_heat_data.chassis_power_buffer < 60)
-		{
-			for(int i =0;i<4;i++)
-			{
-				Chassis_Speed.wheel_speed[i] *= power_heat_data.chassis_power_buffer/60.0f;
-			}
-		}	
+//		if(power_heat_data.chassis_power_buffer < 60)
+//		{
+//			for(int i =0;i<4;i++)
+//			{
+//				Chassis_Speed.wheel_speed[i] *= power_heat_data.chassis_power_buffer/60.0f;
+//			}
+//		}	
 }
 
 
@@ -401,86 +401,86 @@ void Chassis_Speed_Calc(float vx,float vy,float vw)
 {
 	float Speed_Max = 0;
 	//轮速解算
-	Chassis_Speed.wheel_speed[0] = +vx + vy + vw;
-	Chassis_Speed.wheel_speed[1] = -vx + vy + vw;
-	Chassis_Speed.wheel_speed[2] = -vx - vy + vw;
-	Chassis_Speed.wheel_speed[3] = +vx - vy + vw;
+//	Chassis_Speed.wheel_speed[0] = +vx + vy + vw;
+//	Chassis_Speed.wheel_speed[1] = -vx + vy + vw;
+//	Chassis_Speed.wheel_speed[2] = -vx - vy + vw;
+//	Chassis_Speed.wheel_speed[3] = +vx - vy + vw;
 	
 	
-//	//XY平面初始速度夹角 y除以x
-//	Rudder_Data.XY_Angle_Origin = atan2f(vy,vx);//弧度（-PI -- PI）
-//	//Yaw轴电机偏差角
-//	Rudder_Data.Yaw_Angle_Offset = (Init_Angle - CAN_Gimbal[0].Current_MechAngle) / 8192.0f * 360.0f * ANGLE_TO_RAD;
-//	//XY平面真实速度夹角
-//	Rudder_Data.XY_Angle_Real = Rudder_Data.XY_Angle_Origin + Rudder_Data.Yaw_Angle_Offset;
-//  //XY平面速度计算，平方和开根号
-//	Rudder_Data.XY_Speed = sqrt(vx*vx + vy*vy);
+	//XY平面初始速度夹角 y除以x
+	Rudder_Data.XY_Angle_Origin = atan2f(vy,vx);//弧度（-PI -- PI）
+	//Yaw轴电机偏差角
+	Rudder_Data.Yaw_Angle_Offset = (Init_Angle - CAN_Gimbal[0].Current_MechAngle) / 8192.0f * 360.0f * ANGLE_TO_RAD;
+	//XY平面真实速度夹角
+	Rudder_Data.XY_Angle_Real = Rudder_Data.XY_Angle_Origin + Rudder_Data.Yaw_Angle_Offset;
+  //XY平面速度计算，平方和开根号
+	Rudder_Data.XY_Speed = sqrt(vx*vx + vy*vy);
 	
-//  //陀螺模式下每个舵向电机的初始偏移向量
-//	Rudder_Data.XYZ_Angle_A[0] = Chassis_Rotate_Base_Speed * sin(45*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
-//	Rudder_Data.XYZ_Angle_B[0] = Rudder_Data.XY_Speed + Chassis_Rotate_Base_Speed * cos(45*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
-//	Rudder_Data.XYZ_Angle_A[1] = Chassis_Rotate_Base_Speed * sin(135*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
-//	Rudder_Data.XYZ_Angle_B[1] = Rudder_Data.XY_Speed + Chassis_Rotate_Base_Speed * cos(135*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
-//	Rudder_Data.XYZ_Angle_A[2] = Chassis_Rotate_Base_Speed * sin(225*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
-//	Rudder_Data.XYZ_Angle_B[2] = Rudder_Data.XY_Speed + Chassis_Rotate_Base_Speed * cos(225*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
-//	Rudder_Data.XYZ_Angle_A[3] = Chassis_Rotate_Base_Speed * sin(315*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
-//	Rudder_Data.XYZ_Angle_B[3] = Rudder_Data.XY_Speed + Chassis_Rotate_Base_Speed * cos(315*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
-//	
+  //陀螺模式下每个舵向电机的初始偏移向量
+	Rudder_Data.XYZ_Angle_A[0] = Chassis_Rotate_Base_Speed * sin(45*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
+	Rudder_Data.XYZ_Angle_B[0] = Rudder_Data.XY_Speed + Chassis_Rotate_Base_Speed * cos(45*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
+	Rudder_Data.XYZ_Angle_A[1] = Chassis_Rotate_Base_Speed * sin(135*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
+	Rudder_Data.XYZ_Angle_B[1] = Rudder_Data.XY_Speed + Chassis_Rotate_Base_Speed * cos(135*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
+	Rudder_Data.XYZ_Angle_A[2] = Chassis_Rotate_Base_Speed * sin(225*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
+	Rudder_Data.XYZ_Angle_B[2] = Rudder_Data.XY_Speed + Chassis_Rotate_Base_Speed * cos(225*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
+	Rudder_Data.XYZ_Angle_A[3] = Chassis_Rotate_Base_Speed * sin(315*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
+	Rudder_Data.XYZ_Angle_B[3] = Rudder_Data.XY_Speed + Chassis_Rotate_Base_Speed * cos(315*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
+	
 
 
 /*              无就近原则的逻辑                */
-//	for(int i =0;i<4;i++)
-//	{
-//    //最终合成的XYZ舵向角以及轮速
-//		Rudder_Data.XYZ_Angle[i] = Rudder_Data.XY_Angle_Real + atan2f(Rudder_Data.XYZ_Angle_A[i],Rudder_Data.XYZ_Angle_B[i]);	
-//		Rudder_Data.XYZ_Speed[i] = sqrt(Rudder_Data.XYZ_Angle_A[i]*Rudder_Data.XYZ_Angle_A[i] + Rudder_Data.XYZ_Angle_B[i]*Rudder_Data.XYZ_Angle_B[i]);
-//		
-//		//将舵向角范围调整至+-180度
-//		if(Rudder_Data.XYZ_Angle[i] > 180.0*ANGLE_TO_RAD)
-//		{
-//			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XYZ_Angle[i] - 360.0*ANGLE_TO_RAD;
-//		}
-//		else if(Rudder_Data.XYZ_Angle[i] < -180.0*ANGLE_TO_RAD)
-//		{
-//			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XYZ_Angle[i] + 360.0*ANGLE_TO_RAD;
-//		}
+	for(int i =0;i<4;i++)
+	{
+    //最终合成的XYZ舵向角以及轮速
+		Rudder_Data.XYZ_Angle[i] = Rudder_Data.XY_Angle_Real + atan2f(Rudder_Data.XYZ_Angle_A[i],Rudder_Data.XYZ_Angle_B[i]);	
+		Rudder_Data.XYZ_Speed[i] = sqrt(Rudder_Data.XYZ_Angle_A[i]*Rudder_Data.XYZ_Angle_A[i] + Rudder_Data.XYZ_Angle_B[i]*Rudder_Data.XYZ_Angle_B[i]);
+		
+		//将舵向角范围调整至+-180度
+		if(Rudder_Data.XYZ_Angle[i] > 180.0*ANGLE_TO_RAD)
+		{
+			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XYZ_Angle[i] - 360.0*ANGLE_TO_RAD;
+		}
+		else if(Rudder_Data.XYZ_Angle[i] < -180.0*ANGLE_TO_RAD)
+		{
+			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XYZ_Angle[i] + 360.0*ANGLE_TO_RAD;
+		}
 
-//		//当前舵向角
-//		Rudder_Data.XYZ_Angle_Current[i] = (CAN_Rudder[i].Current_MechAngle - CAN_Rudder[i].Init_MechAngle) / 8191.0f * 360.0f * ANGLE_TO_RAD;
-//		
-//		//角度跳变处理，+-180度边界上
-//		/*！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！*/
-//		//假如当前-170°，目标170°
-//		if(Rudder_Data.XYZ_Angle[i] - Rudder_Data.XYZ_Angle_Current[i] > 180.0 * ANGLE_TO_RAD)
-//		{
-//			//则设目标为 170 - 360 = -190°
-//			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i] - 360.0*ANGLE_TO_RAD;
-//		}
-//		//假如当前170°，目标-170°
-//		else if(Rudder_Data.XYZ_Angle[i] - Rudder_Data.XYZ_Angle_Current[i] < -180.0 * ANGLE_TO_RAD)
-//		{
-//			//则设目标为-170 + 360 = 190°
-//			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i] + 360.0*ANGLE_TO_RAD;			
-//		}
-//		else
-//		{
-//			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i];
-//		}
-//		
-//		
-//    //舵向角PID计算
-//		PID_Rudder_Angle[i].PIDout = Pid_Calc(&PID_Rudder_Angle[i],Rudder_Data.XYZ_Angle_Current[i],Rudder_Data.XYZ_Angle_Target[i]);
-//		CAN_Rudder[i].Target_Current = Pid_Calc(&PID_Rudder_Speed[i],CAN_Rudder[i].Current_Speed,PID_Rudder_Angle[i].PIDout);
-//		
-//		//记录上次舵向角
-//		Rudder_Data.XYZ_Angle_Last[i] = Rudder_Data.XYZ_Angle[i];
-//	}	
-//	
-//  //轮速输出
-//	Chassis_Speed.wheel_speed[0] = Rudder_Data.XYZ_Speed[0];
-//	Chassis_Speed.wheel_speed[1] = -Rudder_Data.XYZ_Speed[1];
-//	Chassis_Speed.wheel_speed[2] = -Rudder_Data.XYZ_Speed[2];
-//	Chassis_Speed.wheel_speed[3] = Rudder_Data.XYZ_Speed[3];
+		//当前舵向角
+		Rudder_Data.XYZ_Angle_Current[i] = (CAN_Rudder[i].Current_MechAngle - CAN_Rudder[i].Init_MechAngle) / 8191.0f * 360.0f * ANGLE_TO_RAD;
+		
+		//角度跳变处理，+-180度边界上
+		/*！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！*/
+		//假如当前-170°，目标170°
+		if(Rudder_Data.XYZ_Angle[i] - Rudder_Data.XYZ_Angle_Current[i] > 180.0 * ANGLE_TO_RAD)
+		{
+			//则设目标为 170 - 360 = -190°
+			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i] - 360.0*ANGLE_TO_RAD;
+		}
+		//假如当前170°，目标-170°
+		else if(Rudder_Data.XYZ_Angle[i] - Rudder_Data.XYZ_Angle_Current[i] < -180.0 * ANGLE_TO_RAD)
+		{
+			//则设目标为-170 + 360 = 190°
+			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i] + 360.0*ANGLE_TO_RAD;			
+		}
+		else
+		{
+			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i];
+		}
+		
+		
+    //舵向角PID计算
+		PID_Rudder_Angle[i].PIDout = Pid_Calc(&PID_Rudder_Angle[i],Rudder_Data.XYZ_Angle_Current[i],Rudder_Data.XYZ_Angle_Target[i]);
+		CAN_Rudder[i].Target_Current = Pid_Calc(&PID_Rudder_Speed[i],CAN_Rudder[i].Current_Speed,PID_Rudder_Angle[i].PIDout);
+		
+		//记录上次舵向角
+		Rudder_Data.XYZ_Angle_Last[i] = Rudder_Data.XYZ_Angle[i];
+	}	
+	
+  //轮速输出
+	Chassis_Speed.wheel_speed[0] = Rudder_Data.XYZ_Speed[0];
+	Chassis_Speed.wheel_speed[1] = -Rudder_Data.XYZ_Speed[1];
+	Chassis_Speed.wheel_speed[2] = -Rudder_Data.XYZ_Speed[2];
+	Chassis_Speed.wheel_speed[3] = Rudder_Data.XYZ_Speed[3];
 
 
 //	/*              有就近原则的逻辑                */
@@ -550,7 +550,7 @@ void Chassis_Speed_Calc(float vx,float vy,float vw)
 //		//记录上次舵向角
 //		Rudder_Data.XYZ_Angle_Last[i] = Rudder_Data.XYZ_Angle[i];
 //	}	
-//	
+	
 //  //轮速输出
 //	Chassis_Speed.wheel_speed[0] = Rudder_Data.XYZ_Speed[0] * Rudder_Data.XYZ_Speed_Dir;
 //	Chassis_Speed.wheel_speed[1] = -Rudder_Data.XYZ_Speed[1] * Rudder_Data.XYZ_Speed_Dir;

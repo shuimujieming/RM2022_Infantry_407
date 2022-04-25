@@ -1,6 +1,6 @@
 Dependencies for Project 'RM2022_Infantry_407', Target 'Infantry': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (.\main.c)(0x6254EA59)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\CORE -I ..\FWLIB\inc -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM4F -I ..\TASK -I ..\TOOL -I ..\HARDWARE-ID:\Soft\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="534" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\main.c)(0x6266CBFB)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\CORE -I ..\FWLIB\inc -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM4F -I ..\TASK -I ..\TOOL -I ..\HARDWARE-ID:\Soft\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="534" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (main.h)(0x6254EA59)
 I (..\SYSTEM\sys\sys.h)(0x6254EA58)
 I (..\USER\stm32f4xx.h)(0x6254EA59)
@@ -559,7 +559,7 @@ I (..\HARDWARE\chassis.h)(0x6254EA58)
 I (..\HARDWARE\can_handle.h)(0x6254EA58)
 I (..\TOOL\ramp.h)(0x6254EA59)
 I (..\TOOL\kalman.h)(0x6254EA58)
-F (..\HARDWARE\can_handle.c)(0x6254EA58)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\CORE -I ..\FWLIB\inc -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM4F -I ..\TASK -I ..\TOOL -I ..\HARDWARE-ID:\Soft\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="534" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o .\objects\can_handle.o --omf_browse .\objects\can_handle.crf --depend .\objects\can_handle.d)
+F (..\HARDWARE\can_handle.c)(0x6266D0F2)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\CORE -I ..\FWLIB\inc -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM4F -I ..\TASK -I ..\TOOL -I ..\HARDWARE-ID:\Soft\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="534" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o .\objects\can_handle.o --omf_browse .\objects\can_handle.crf --depend .\objects\can_handle.d)
 I (..\HARDWARE\can_handle.h)(0x6254EA58)
 I (..\USER\main.h)(0x6254EA59)
 I (..\SYSTEM\sys\sys.h)(0x6254EA58)
@@ -2305,7 +2305,7 @@ I (..\HARDWARE\chassis.h)(0x6254EA58)
 I (..\HARDWARE\can_handle.h)(0x6254EA58)
 I (..\TOOL\ramp.h)(0x6254EA59)
 I (..\TOOL\kalman.h)(0x6254EA58)
-F (..\HARDWARE\rudder.c)(0x625B8BFC)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\CORE -I ..\FWLIB\inc -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM4F -I ..\TASK -I ..\TOOL -I ..\HARDWARE-ID:\Soft\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="534" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o .\objects\rudder.o --omf_browse .\objects\rudder.crf --depend .\objects\rudder.d)
+F (..\HARDWARE\rudder.c)(0x6266D2A8)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\CORE -I ..\FWLIB\inc -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM4F -I ..\TASK -I ..\TOOL -I ..\HARDWARE-ID:\Soft\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="534" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o .\objects\rudder.o --omf_browse .\objects\rudder.crf --depend .\objects\rudder.d)
 I (..\HARDWARE\rudder.h)(0x625B8AF7)
 I (..\USER\main.h)(0x6254EA59)
 I (..\SYSTEM\sys\sys.h)(0x6254EA58)
@@ -3325,7 +3325,7 @@ I (..\HARDWARE\chassis.h)(0x6254EA58)
 I (..\HARDWARE\can_handle.h)(0x6254EA58)
 I (..\TOOL\ramp.h)(0x6254EA59)
 I (..\TOOL\kalman.h)(0x6254EA58)
-F (..\TASK\chassis_task.c)(0x625FD021)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\CORE -I ..\FWLIB\inc -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM4F -I ..\TASK -I ..\TOOL -I ..\HARDWARE-ID:\Soft\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="534" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o .\objects\chassis_task.o --omf_browse .\objects\chassis_task.crf --depend .\objects\chassis_task.d)
+F (..\TASK\chassis_task.c)(0x6266D418)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\CORE -I ..\FWLIB\inc -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM4F -I ..\TASK -I ..\TOOL -I ..\HARDWARE-ID:\Soft\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="534" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o .\objects\chassis_task.o --omf_browse .\objects\chassis_task.crf --depend .\objects\chassis_task.d)
 I (..\TASK\chassis_task.h)(0x6254EA58)
 I (..\USER\main.h)(0x6254EA59)
 I (..\SYSTEM\sys\sys.h)(0x6254EA58)

@@ -46,6 +46,7 @@ void BSP_Init()
 	Shoot_Init();					//发射初始化
 	
 	Rudder_Init();        //舵初始化
+	
 }
 
 /*

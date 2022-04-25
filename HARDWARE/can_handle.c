@@ -296,7 +296,7 @@ void CAN1_TX_Chassis(void)
 	CAN1_Tx_Message.RTR = CAN_RTR_DATA;                                             //数据帧
 	CAN1_Tx_Message.DLC = 0x08;                                                     //帧长度为8
 	CAN1_Tx_Message.StdId = 0x200;                               										//帧ID为传入参数的CAN_ID
-
+	
 	CAN1_Tx_Message.Data[0] = (CAN_Chassis[0].Target_Current>>8)&0xff;             //201接收电流高8位
 	CAN1_Tx_Message.Data[1] = (CAN_Chassis[0].Target_Current)&0xff;                 //201接收电流低8位
 	CAN1_Tx_Message.Data[2] = (CAN_Chassis[1].Target_Current>>8)&0xff;             //202接收电流高8位
@@ -471,6 +471,16 @@ void CAN2_TX_Rudder(void)
 	CAN2_Tx_Message.Data[6] = (CAN_Rudder[3].Target_Current>>8)&0xff;             
 	CAN2_Tx_Message.Data[7] = (CAN_Rudder[3].Target_Current)&0xff;     
 
+	//
+//	CAN2_Tx_Message.Data[0] = 0;  
+//	CAN2_Tx_Message.Data[1] = 0; 
+//	CAN2_Tx_Message.Data[2] = 0;  
+//	CAN2_Tx_Message.Data[3] = 0;                
+//	CAN2_Tx_Message.Data[4] = 0;  
+//	CAN2_Tx_Message.Data[5] = 0;                   
+//	CAN2_Tx_Message.Data[6] = 0;             
+//	CAN2_Tx_Message.Data[7] = 0;  
+	
 	CAN2_Tx_Message_Flag = 0;
 	
 	//CAN2掉线处理

@@ -17,7 +17,7 @@ Library Manager: ArmAr.exe V5.06 update 7 (build 960)
 Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
 CPU DLL:         SARMCM3.DLL V5.34.0.0
 Dialog DLL:      DCM.DLL V1.17.3.0
-Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Target DLL:      CMSIS_AGDI.dll V1.32.13.0
 Dialog DLL:      TCM.DLL V1.48.0.0
  
 <h2>Project:</h2>
@@ -27,7 +27,170 @@ Project File Date:  04/16/2022
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Soft\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Infantry'
-".\Objects\RM2022_Infantry_407.axf" - 0 Error(s), 0 Warning(s).
+compiling chassis_task.c...
+..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\task_init.h(58): warning:  #1295-D: Deprecated declaration Task_Init - give arg types
+  void Task_Init();
+..\TASK\task_init.h(59): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\led_task.h(5): warning:  #1295-D: Deprecated declaration led_task_create - give arg types
+  void led_task_create();
+..\TASK\led_task.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\imu_task.h(5): warning:  #1295-D: Deprecated declaration imu_task_create - give arg types
+  void imu_task_create();
+..\TASK\imu_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\shoot_task.h(23): warning:  #1295-D: Deprecated declaration shoot_task_create - give arg types
+  void shoot_task_create();
+..\TASK\shoot_task.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\gimbal_task.h(13): warning:  #1295-D: Deprecated declaration gimbal_task_create - give arg types
+  void gimbal_task_create();
+..\TASK\gimbal_task.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\chassis_task.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\ui_task.h(5): warning:  #1295-D: Deprecated declaration ui_task_create - give arg types
+  void ui_task_create();
+..\TASK\ui_task.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\can_send_task.h(5): warning:  #1295-D: Deprecated declaration can_send_task_create - give arg types
+  void can_send_task_create();
+..\TASK\can_send_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\mode_task.h(5): warning:  #1295-D: Deprecated declaration mode_task_create - give arg types
+  void mode_task_create();
+..\TASK\mode_task.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\supercap_task.h(5): warning:  #1295-D: Deprecated declaration supercap_task_create - give arg types
+  void supercap_task_create();
+..\TASK\supercap_task.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\nuc_task.h(5): warning:  #1295-D: Deprecated declaration nuc_task_create - give arg types
+  void nuc_task_create();
+..\TASK\nuc_task.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\led.h(21): warning:  #1295-D: Deprecated declaration LED_Init - give arg types
+  void LED_Init();//≥ı ºªØLEDµ∆			    
+..\HARDWARE\laser.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\dr16.h(72): warning:  #1295-D: Deprecated declaration DR16_Init - give arg types
+  void DR16_Init();
+..\HARDWARE\dr16.h(74): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\tim6.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\pid.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\can.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\spi.h(5): warning:  #1295-D: Deprecated declaration SPI_IMU_Init - give arg types
+  void SPI_IMU_Init();
+..\HARDWARE\spi.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\imu.h(13): warning:  #1295-D: Deprecated declaration IMU_Ahrs_Update - give arg types
+  void IMU_Ahrs_Update();
+..\HARDWARE\imu.h(14): warning:  #1295-D: Deprecated declaration IMU_Attitude_Update - give arg types
+  void IMU_Attitude_Update();
+..\HARDWARE\nuc.h(7): warning:  #1295-D: Deprecated declaration NUC_Init - give arg types
+  void NUC_Init();
+..\HARDWARE\nuc.h(18): warning:  #1295-D: Deprecated declaration NUC_Send_Data - give arg types
+  void NUC_Send_Data();
+..\HARDWARE\nuc.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\shoot.h(5): warning:  #1295-D: Deprecated declaration Shoot_Init - give arg types
+  void Shoot_Init();
+..\HARDWARE\shoot.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\cover.h(5): warning:  #1295-D: Deprecated declaration Cover_Init - give arg types
+  void Cover_Init();
+..\HARDWARE\cover.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\referee.h(6): warning:  #1295-D: Deprecated declaration Referee_Init - give arg types
+  void Referee_Init();
+..\HARDWARE\referee.h(9): warning:  #1295-D: Deprecated declaration referee_data_send - give arg types
+  void referee_data_send();
+..\HARDWARE\referee.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\beep.h(18): warning:  #1295-D: Deprecated declaration Beep_Init - give arg types
+  void Beep_Init();
+..\HARDWARE\beep.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\bmi088.h(9): warning:  #1295-D: Deprecated declaration BMI088_SPI_Init - give arg types
+  void BMI088_SPI_Init();
+..\HARDWARE\bmi088.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\bmi088driver.h(103): warning:  #1295-D: Deprecated declaration BMI088_Get_Data - give arg types
+  void BMI088_Get_Data();
+..\HARDWARE\bmi088driver.h(105): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\rudder.h(26): warning:  #1295-D: Deprecated declaration Rudder_Init - give arg types
+  void Rudder_Init();
+..\HARDWARE\rudder.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\referee_info.h(242): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\custom_ui.h(138): warning:  #1295-D: Deprecated declaration Show_UI - give arg types
+  void Show_UI();
+..\HARDWARE\custom_ui.h(139): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\gimbal.h(16): warning:  #1295-D: Deprecated declaration Gimbal_Init - give arg types
+  void Gimbal_Init();
+..\HARDWARE\gimbal.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\chassis.h(8): warning:  #1295-D: Deprecated declaration Chassis_Init - give arg types
+  void Chassis_Init();
+..\HARDWARE\chassis.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\can_handle.h(55): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\USER\main.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\chassis_task.h(31): warning:  #1295-D: Deprecated declaration chassis_task_create - give arg types
+  void chassis_task_create();
+..\TASK\chassis_task.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TASK\chassis_task.c(3): warning:  #1295-D: Deprecated declaration Chassis_Follow_Control - give arg types
+  void Chassis_Follow_Control();
+..\TASK\chassis_task.c(4): warning:  #1295-D: Deprecated declaration Chassis_Stop_Control - give arg types
+  void Chassis_Stop_Control();
+..\TASK\chassis_task.c(5): warning:  #1295-D: Deprecated declaration Chassis_Rotate_Control - give arg types
+  void Chassis_Rotate_Control();
+..\TASK\chassis_task.c(36): warning:  #1295-D: Deprecated declaration Chassis_Power_Limit - give arg types
+  void Chassis_Power_Limit();
+..\TASK\chassis_task.c(37): warning:  #1295-D: Deprecated declaration Chassis_SuperCap_Control - give arg types
+  void Chassis_SuperCap_Control();
+..\TASK\chassis_task.c(96): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				if(SuperCap_Info.CapVot < 15.0)
+..\TASK\chassis_task.c(203): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(SuperCap_Info.Low_Filter_Vot < 16.0)
+..\TASK\chassis_task.c(213): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		power_limit = (SuperCap_Info.Low_Filter_Vot - 10.0) / (SuperCap_Info.InputVot - 10.0);
+..\TASK\chassis_task.c(213): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		power_limit = (SuperCap_Info.Low_Filter_Vot - 10.0) / (SuperCap_Info.InputVot - 10.0);
+..\TASK\chassis_task.c(215): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(power_limit >= 1.0)
+..\TASK\chassis_task.c(439): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(Rudder_Data.XYZ_Angle[i] > 180.0*ANGLE_TO_RAD)
+..\TASK\chassis_task.c(441): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XYZ_Angle[i] - 360.0*ANGLE_TO_RAD;
+..\TASK\chassis_task.c(445): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XYZ_Angle[i] + 360.0*ANGLE_TO_RAD;
+..\TASK\chassis_task.c(454): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(Rudder_Data.XYZ_Angle[i] - Rudder_Data.XYZ_Angle_Current[i] > 180.0 * ANGLE_TO_RAD)
+..\TASK\chassis_task.c(457): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i] - 360.0*ANGLE_TO_RAD;
+..\TASK\chassis_task.c(463): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			Rudder_Data.XYZ_Angle_Target[i] = Rudder_Data.XYZ_Angle[i] + 360.0*ANGLE_TO_RAD;			
+..\TASK\chassis_task.c(579): warning:  #1-D: last line of file ends without a newline
+  }
+..\TASK\chassis_task.c: 79 warnings, 0 errors
+linking...
+Program Size: Code=55394 RO-data=1902 RW-data=720 ZI-data=84304  
+FromELF: creating hex file...
+".\Objects\RM2022_Infantry_407.axf" - 0 Error(s), 79 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -40,7 +203,7 @@ Package Vendor: Keil
   D:\Soft\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>
