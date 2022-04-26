@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\RM2022_Infantry_407.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\RM2022_Infantry_407.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Apr 26 01:02:18 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Apr 26 15:33:00 2022
 <BR><P>
 <H3>Maximum Stack Usage =        324 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1267,8 +1267,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_task
 </UL>
 
-<P><STRONG><a name="[10c]"></a>Chassis_Speed_Calc</STRONG> (Thumb, 2064 bytes, Stack size 72 bytes, chassis_task.o(i.Chassis_Speed_Calc))
-<BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = Chassis_Speed_Calc &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
+<P><STRONG><a name="[10c]"></a>Chassis_Speed_Calc</STRONG> (Thumb, 2784 bytes, Stack size 80 bytes, chassis_task.o(i.Chassis_Speed_Calc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = Chassis_Speed_Calc &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pid_Calc
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
@@ -2629,7 +2629,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[66]"></a>chassis_task</STRONG> (Thumb, 404 bytes, Stack size 16 bytes, chassis_task.o(i.chassis_task))
-<BR><BR>[Stack]<UL><LI>Max Depth = 272<LI>Call Chain = chassis_task &rArr; Chassis_Speed_Calc &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
+<BR><BR>[Stack]<UL><LI>Max Depth = 280<LI>Call Chain = chassis_task &rArr; Chassis_Speed_Calc &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pid_Calc
 <LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupSetBits

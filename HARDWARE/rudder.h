@@ -16,7 +16,7 @@ typedef struct
 	float XYZ_Angle_A[4];
 	float XYZ_Angle_B[4];
 	float XYZ_Speed[4];
-	int XYZ_Speed_Dir;
+	int   XYZ_Speed_Dir[4];
 } Rudder_TypeDef;
 
 extern Rudder_TypeDef Rudder_Data;
