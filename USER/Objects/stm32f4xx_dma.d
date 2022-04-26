@@ -3,9 +3,10 @@
 .\objects\stm32f4xx_dma.o: ..\USER\stm32f4xx.h
 .\objects\stm32f4xx_dma.o: ..\CORE\core_cm4.h
 .\objects\stm32f4xx_dma.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\stm32f4xx_dma.o: ..\CORE\core_cmInstr.h
-.\objects\stm32f4xx_dma.o: ..\CORE\core_cmFunc.h
-.\objects\stm32f4xx_dma.o: ..\CORE\core_cm4_simd.h
+.\objects\stm32f4xx_dma.o: ..\CORE\cmsis_version.h
+.\objects\stm32f4xx_dma.o: ..\CORE\cmsis_compiler.h
+.\objects\stm32f4xx_dma.o: ..\CORE\cmsis_armcc.h
+.\objects\stm32f4xx_dma.o: ..\CORE\mpu_armv7.h
 .\objects\stm32f4xx_dma.o: ..\USER\system_stm32f4xx.h
 .\objects\stm32f4xx_dma.o: ..\USER\stm32f4xx_conf.h
 .\objects\stm32f4xx_dma.o: ..\FWLIB\inc\stm32f4xx_adc.h

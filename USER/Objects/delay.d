@@ -4,9 +4,10 @@
 .\objects\delay.o: ..\USER\stm32f4xx.h
 .\objects\delay.o: ..\CORE\core_cm4.h
 .\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\delay.o: ..\CORE\core_cmInstr.h
-.\objects\delay.o: ..\CORE\core_cmFunc.h
-.\objects\delay.o: ..\CORE\core_cm4_simd.h
+.\objects\delay.o: ..\CORE\cmsis_version.h
+.\objects\delay.o: ..\CORE\cmsis_compiler.h
+.\objects\delay.o: ..\CORE\cmsis_armcc.h
+.\objects\delay.o: ..\CORE\mpu_armv7.h
 .\objects\delay.o: ..\USER\system_stm32f4xx.h
 .\objects\delay.o: ..\USER\stm32f4xx_conf.h
 .\objects\delay.o: ..\FWLIB\inc\stm32f4xx_adc.h
@@ -39,6 +40,10 @@
 .\objects\delay.o: ..\USER\main.h
 .\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\delay.o: ..\DSP\Include\arm_math.h
+.\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+.\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
 .\objects\delay.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\delay.o: ..\FreeRTOS\include\FreeRTOSConfig.h
@@ -78,7 +83,6 @@
 .\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\delay.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\delay.o: ..\HARDWARE\ist8310.h
 .\objects\delay.o: ..\HARDWARE\nuc.h
 .\objects\delay.o: ..\HARDWARE\shoot.h

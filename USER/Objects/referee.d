@@ -5,9 +5,10 @@
 .\objects\referee.o: ..\USER\stm32f4xx.h
 .\objects\referee.o: ..\CORE\core_cm4.h
 .\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\referee.o: ..\CORE\core_cmInstr.h
-.\objects\referee.o: ..\CORE\core_cmFunc.h
-.\objects\referee.o: ..\CORE\core_cm4_simd.h
+.\objects\referee.o: ..\CORE\cmsis_version.h
+.\objects\referee.o: ..\CORE\cmsis_compiler.h
+.\objects\referee.o: ..\CORE\cmsis_armcc.h
+.\objects\referee.o: ..\CORE\mpu_armv7.h
 .\objects\referee.o: ..\USER\system_stm32f4xx.h
 .\objects\referee.o: ..\USER\stm32f4xx_conf.h
 .\objects\referee.o: ..\FWLIB\inc\stm32f4xx_adc.h
@@ -39,6 +40,10 @@
 .\objects\referee.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 .\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\referee.o: ..\DSP\Include\arm_math.h
+.\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+.\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
 .\objects\referee.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\referee.o: ..\FreeRTOS\include\FreeRTOSConfig.h
@@ -78,7 +83,6 @@
 .\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\referee.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\referee.o: ..\HARDWARE\ist8310.h
 .\objects\referee.o: ..\HARDWARE\nuc.h
 .\objects\referee.o: ..\HARDWARE\shoot.h

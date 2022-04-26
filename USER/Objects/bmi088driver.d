@@ -5,9 +5,10 @@
 .\objects\bmi088driver.o: ..\USER\stm32f4xx.h
 .\objects\bmi088driver.o: ..\CORE\core_cm4.h
 .\objects\bmi088driver.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\bmi088driver.o: ..\CORE\core_cmInstr.h
-.\objects\bmi088driver.o: ..\CORE\core_cmFunc.h
-.\objects\bmi088driver.o: ..\CORE\core_cm4_simd.h
+.\objects\bmi088driver.o: ..\CORE\cmsis_version.h
+.\objects\bmi088driver.o: ..\CORE\cmsis_compiler.h
+.\objects\bmi088driver.o: ..\CORE\cmsis_armcc.h
+.\objects\bmi088driver.o: ..\CORE\mpu_armv7.h
 .\objects\bmi088driver.o: ..\USER\system_stm32f4xx.h
 .\objects\bmi088driver.o: ..\USER\stm32f4xx_conf.h
 .\objects\bmi088driver.o: ..\FWLIB\inc\stm32f4xx_adc.h
@@ -39,6 +40,10 @@
 .\objects\bmi088driver.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 .\objects\bmi088driver.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\bmi088driver.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\bmi088driver.o: ..\DSP\Include\arm_math.h
+.\objects\bmi088driver.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\bmi088driver.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+.\objects\bmi088driver.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
 .\objects\bmi088driver.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\bmi088driver.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\bmi088driver.o: ..\FreeRTOS\include\FreeRTOSConfig.h
@@ -78,7 +83,6 @@
 .\objects\bmi088driver.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\bmi088driver.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\bmi088driver.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\bmi088driver.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\bmi088driver.o: ..\HARDWARE\ist8310.h
 .\objects\bmi088driver.o: ..\HARDWARE\nuc.h
 .\objects\bmi088driver.o: ..\HARDWARE\shoot.h

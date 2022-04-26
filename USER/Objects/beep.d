@@ -5,9 +5,10 @@
 .\objects\beep.o: ..\USER\stm32f4xx.h
 .\objects\beep.o: ..\CORE\core_cm4.h
 .\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\beep.o: ..\CORE\core_cmInstr.h
-.\objects\beep.o: ..\CORE\core_cmFunc.h
-.\objects\beep.o: ..\CORE\core_cm4_simd.h
+.\objects\beep.o: ..\CORE\cmsis_version.h
+.\objects\beep.o: ..\CORE\cmsis_compiler.h
+.\objects\beep.o: ..\CORE\cmsis_armcc.h
+.\objects\beep.o: ..\CORE\mpu_armv7.h
 .\objects\beep.o: ..\USER\system_stm32f4xx.h
 .\objects\beep.o: ..\USER\stm32f4xx_conf.h
 .\objects\beep.o: ..\FWLIB\inc\stm32f4xx_adc.h
@@ -39,6 +40,10 @@
 .\objects\beep.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 .\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\beep.o: ..\DSP\Include\arm_math.h
+.\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+.\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
 .\objects\beep.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\beep.o: ..\FreeRTOS\include\FreeRTOSConfig.h
@@ -78,7 +83,6 @@
 .\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\beep.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\beep.o: ..\HARDWARE\ist8310.h
 .\objects\beep.o: ..\HARDWARE\nuc.h
 .\objects\beep.o: ..\HARDWARE\shoot.h

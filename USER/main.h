@@ -16,6 +16,9 @@ Log:
 #include "stdio.h"	//标准输入输出库
 #include <math.h>   //数学处理函数
 
+#include "arm_math.h" //DSP数学处理库
+
+
 /* 常用数据类型的类型别名设置 */
 typedef signed char int8_t;
 typedef signed short int int16_t;

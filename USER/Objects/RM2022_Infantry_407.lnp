@@ -61,6 +61,7 @@
 ".\objects\ui_task.o"
 ".\objects\kalman.o"
 ".\objects\ramp.o"
+"..\DSP\arm_cortexM4lf_math.lib"
 --strict --scatter ".\Objects\RM2022_Infantry_407.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

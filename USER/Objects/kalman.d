@@ -5,9 +5,10 @@
 .\objects\kalman.o: ..\USER\stm32f4xx.h
 .\objects\kalman.o: ..\CORE\core_cm4.h
 .\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\kalman.o: ..\CORE\core_cmInstr.h
-.\objects\kalman.o: ..\CORE\core_cmFunc.h
-.\objects\kalman.o: ..\CORE\core_cm4_simd.h
+.\objects\kalman.o: ..\CORE\cmsis_version.h
+.\objects\kalman.o: ..\CORE\cmsis_compiler.h
+.\objects\kalman.o: ..\CORE\cmsis_armcc.h
+.\objects\kalman.o: ..\CORE\mpu_armv7.h
 .\objects\kalman.o: ..\USER\system_stm32f4xx.h
 .\objects\kalman.o: ..\USER\stm32f4xx_conf.h
 .\objects\kalman.o: ..\FWLIB\inc\stm32f4xx_adc.h
@@ -39,6 +40,10 @@
 .\objects\kalman.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 .\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\kalman.o: ..\DSP\Include\arm_math.h
+.\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+.\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
 .\objects\kalman.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\kalman.o: ..\FreeRTOS\include\FreeRTOSConfig.h
@@ -78,7 +83,6 @@
 .\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\kalman.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\kalman.o: ..\HARDWARE\ist8310.h
 .\objects\kalman.o: ..\HARDWARE\nuc.h
 .\objects\kalman.o: ..\HARDWARE\shoot.h

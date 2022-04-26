@@ -5,9 +5,10 @@
 .\objects\imu_task.o: ..\USER\stm32f4xx.h
 .\objects\imu_task.o: ..\CORE\core_cm4.h
 .\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\imu_task.o: ..\CORE\core_cmInstr.h
-.\objects\imu_task.o: ..\CORE\core_cmFunc.h
-.\objects\imu_task.o: ..\CORE\core_cm4_simd.h
+.\objects\imu_task.o: ..\CORE\cmsis_version.h
+.\objects\imu_task.o: ..\CORE\cmsis_compiler.h
+.\objects\imu_task.o: ..\CORE\cmsis_armcc.h
+.\objects\imu_task.o: ..\CORE\mpu_armv7.h
 .\objects\imu_task.o: ..\USER\system_stm32f4xx.h
 .\objects\imu_task.o: ..\USER\stm32f4xx_conf.h
 .\objects\imu_task.o: ..\FWLIB\inc\stm32f4xx_adc.h
@@ -39,6 +40,10 @@
 .\objects\imu_task.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 .\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\imu_task.o: ..\DSP\Include\arm_math.h
+.\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+.\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
 .\objects\imu_task.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\imu_task.o: ..\FreeRTOS\include\FreeRTOSConfig.h
@@ -78,7 +83,6 @@
 .\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\imu_task.o: D:\Soft\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\imu_task.o: ..\HARDWARE\ist8310.h
 .\objects\imu_task.o: ..\HARDWARE\nuc.h
 .\objects\imu_task.o: ..\HARDWARE\shoot.h
