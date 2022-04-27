@@ -11,9 +11,9 @@ void Rudder_Init()
 	for(int i = 0;i<4;i++)
 	{	
 		Pid_Reset(&PID_Rudder_Angle[i]);
-		Pid_Set(&PID_Rudder_Angle[i],100.0f,0.0f,0,30000,500,5000,30000,1,5000,0,0);
+		Pid_Set(&PID_Rudder_Angle[i],400.0f,0.0f,0,30000,500,5000,30000,1,5000,0,0);
 		Pid_Reset(&PID_Rudder_Speed[i]);
-		Pid_Set(&PID_Rudder_Speed[i],200.0f,0.0f,0,30000,500,5000,30000,1,5000,0,0);
+		Pid_Set(&PID_Rudder_Speed[i],210.0f,0.0f,0,30000,500,5000,30000,1,5000,0,0);
 	}
 	
 	//舵的初始角度标定

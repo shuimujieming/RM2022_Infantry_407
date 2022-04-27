@@ -459,7 +459,8 @@ void Chassis_Rudder_NonNearby_Cal(float vx,float vy,float vw)
 		//很关键，重点的地方，角度加上了XY_Angle_Real，加上了初始的偏移角。合成初始偏移角与AB合成角为真实角度方向
 		Rudder_Data.XYZ_Angle[i] = Rudder_Data.XY_Angle_Real + atan2f(Rudder_Data.XYZ_Angle_A[i],Rudder_Data.XYZ_Angle_B[i]);	
 		//速度大小仅由AB合成速度决定
-		Rudder_Data.XYZ_Speed[i] = sqrt(Rudder_Data.XYZ_Angle_A[i]*Rudder_Data.XYZ_Angle_A[i] + Rudder_Data.XYZ_Angle_B[i]*Rudder_Data.XYZ_Angle_B[i]);
+//		Rudder_Data.XYZ_Speed[i] = sqrt(Rudder_Data.XYZ_Angle_A[i]*Rudder_Data.XYZ_Angle_A[i] + Rudder_Data.XYZ_Angle_B[i]*Rudder_Data.XYZ_Angle_B[i]);
+		arm_sqrt_f32((Rudder_Data.XYZ_Angle_A[i]*Rudder_Data.XYZ_Angle_A[i] + Rudder_Data.XYZ_Angle_B[i]*Rudder_Data.XYZ_Angle_B[i]),&Rudder_Data.XYZ_Speed[i]);
 		
 		//将舵向角范围调整至+-180度
 		if(Rudder_Data.XYZ_Angle[i] > 180.0*ANGLE_TO_RAD)
@@ -524,20 +525,39 @@ void Chassis_Rudder_NonNearby_Cal(float vx,float vy,float vw)
 	//最大轮速限制
 	Chassis_Max_Limit();
 }
+short Yaw_Test = 0;
 
 //底盘舵轮就近原则解算
 void Chassis_Rudder_Nearby_Cal(float vx,float vy,float vw)
 {
+	
+	Yaw_Test += DBUS.RC.ch2 / 660.0f * 20.0f;
+	
+	if(Yaw_Test < 0)
+	{
+		Yaw_Test += 8191;
+	}
+	else if(Yaw_Test > 8191)
+	{
+		Yaw_Test -=8191;
+	}
+	
+	Chassis_Rotate_Base_Speed = ((-DBUS.RC.ch2) / 660.0 + (-DBUS.PC.X / 100.0)) * 3000;
+	
 		//XY平面初始速度夹角 y除以x
 	//弧度（-PI -- PI）
 	Rudder_Data.XY_Angle_Origin = atan2f(vy,vx);
 	//Yaw轴电机偏差角
 	//弧度（-PI -- PI）
-	Rudder_Data.Yaw_Angle_Offset = (Init_Angle - CAN_Gimbal[0].Current_MechAngle) / 8192.0f * 360.0f * ANGLE_TO_RAD; 
+//	Rudder_Data.Yaw_Angle_Offset = (Init_Angle - CAN_Gimbal[0].Current_MechAngle) / 8192.0f * 360.0f * ANGLE_TO_RAD; 
+	
+	Rudder_Data.Yaw_Angle_Offset = (0) / 8192.0f * 360.0f * ANGLE_TO_RAD; 
+
+	
+	
 	//XY平面真实速度夹角（原始XY速度夹角与Yaw轴角度偏差叠加）
 	Rudder_Data.XY_Angle_Real = Rudder_Data.XY_Angle_Origin + Rudder_Data.Yaw_Angle_Offset;
   	//XY平面速度计算，平方和开根号
-//	Rudder_Data.XY_Speed = sqrt(vx*vx + vy*vy);
 	arm_sqrt_f32(vx*vx + vy*vy,&Rudder_Data.XY_Speed);
 	
 	
@@ -555,12 +575,27 @@ void Chassis_Rudder_Nearby_Cal(float vx,float vy,float vw)
 	Rudder_Data.XYZ_Angle_B[3] = Rudder_Data.XY_Speed + Chassis_Rotate_Base_Speed * arm_cos_f32(315*ANGLE_TO_RAD - Rudder_Data.XY_Angle_Real);
 	
 	
+	
+	
 	/*              有就近原则的逻辑                */
 	for(int i =0;i<4;i++)
 	{
     //最终合成的XYZ舵向角以及轮速
-		Rudder_Data.XYZ_Angle[i] = Rudder_Data.XY_Angle_Real + atan2f(Rudder_Data.XYZ_Angle_A[i],Rudder_Data.XYZ_Angle_B[i]);	
-//		Rudder_Data.XYZ_Speed[i] = sqrt(Rudder_Data.XYZ_Angle_A[i]*Rudder_Data.XYZ_Angle_A[i] + Rudder_Data.XYZ_Angle_B[i]*Rudder_Data.XYZ_Angle_B[i]);
+		if(Rudder_Data.XYZ_Angle_B[i] == 0)
+		{
+			if(i%2 == 0)
+			{
+			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XY_Angle_Real + (1);																
+			}	
+			else
+				{
+			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XY_Angle_Real + (-1);												
+				}
+		}
+		else
+		{
+			Rudder_Data.XYZ_Angle[i] = Rudder_Data.XY_Angle_Real + atan2f(Rudder_Data.XYZ_Angle_A[i],Rudder_Data.XYZ_Angle_B[i]);				
+		}
 		arm_sqrt_f32((Rudder_Data.XYZ_Angle_A[i]*Rudder_Data.XYZ_Angle_A[i] + Rudder_Data.XYZ_Angle_B[i]*Rudder_Data.XYZ_Angle_B[i]),&Rudder_Data.XYZ_Speed[i]);
 		
 		//将舵向角范围调整至+-180度
@@ -626,10 +661,10 @@ void Chassis_Rudder_Nearby_Cal(float vx,float vy,float vw)
 	}	
 	
   //轮速输出（含就近原则，故轮子有反转）
-	Chassis_Speed.wheel_speed[0] = Rudder_Data.XYZ_Speed[0] * Rudder_Data.XYZ_Speed_Dir[0];
-	Chassis_Speed.wheel_speed[1] = -Rudder_Data.XYZ_Speed[1] * Rudder_Data.XYZ_Speed_Dir[1];
-	Chassis_Speed.wheel_speed[2] = -Rudder_Data.XYZ_Speed[2] * Rudder_Data.XYZ_Speed_Dir[2];
-	Chassis_Speed.wheel_speed[3] = Rudder_Data.XYZ_Speed[3] * Rudder_Data.XYZ_Speed_Dir[3];
+	Chassis_Speed.wheel_speed[0] = -Rudder_Data.XYZ_Speed[0] * Rudder_Data.XYZ_Speed_Dir[0];
+	Chassis_Speed.wheel_speed[1] = Rudder_Data.XYZ_Speed[1] * Rudder_Data.XYZ_Speed_Dir[1];
+	Chassis_Speed.wheel_speed[2] = Rudder_Data.XYZ_Speed[2] * Rudder_Data.XYZ_Speed_Dir[2];
+	Chassis_Speed.wheel_speed[3] = -Rudder_Data.XYZ_Speed[3] * Rudder_Data.XYZ_Speed_Dir[3];
 
 	//最大轮速限制
 	Chassis_Max_Limit();

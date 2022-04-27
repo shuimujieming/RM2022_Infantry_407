@@ -108,7 +108,7 @@ void Get_Chassis_RC()
 {
 	//手动限制最大速度
 	rc.vx = DBUS.RC.ch1 / 660.0f * 5000.0f;
-	rc.vy = DBUS.RC.ch0 / 660.0f * 3000.0f;
+	rc.vy = DBUS.RC.ch0 / 660.0f * 5000.0f;
 	rc.vw = DBUS.RC.ch2 / 660.0f * 1500.0f;
 	
 }
